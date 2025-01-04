@@ -11,7 +11,7 @@ import {
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
 
-const Header = (className?: string) => {
+const Header = ({ className }: { className?: string }) => {
 
   const { scrollYProgress } = useScroll();
 

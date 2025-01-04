@@ -7,19 +7,10 @@ import TechnologyStack from '@/components/ui/technology-stack'
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
       <Hero />
-
-      {/* SparkAgent Section */}
       <SparkAgent />
-
-      {/* Technology Stack */}
       <TechnologyStack />
-
-      {/* Community Section */}
       <CommunitySection />
-
-      {/* SPARK Token Section */}
       <SparkToken />
     </div>
   )
