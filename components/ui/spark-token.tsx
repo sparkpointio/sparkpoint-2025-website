@@ -7,8 +7,8 @@ import { PiStarFourFill } from "react-icons/pi";
 function SparkToken() {
 
   useEffect(() => {
-    let index = 0,
-      interval = 1300;
+    let index = 0;
+    const interval = 1300;
 
     const rand = (min: number, max: number) =>
       Math.floor(Math.random() * (max - min + 1)) + min;
