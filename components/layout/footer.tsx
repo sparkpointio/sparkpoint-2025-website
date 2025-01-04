@@ -1,0 +1,91 @@
+"use client"
+
+import { discord_logo, fb_logo, telegram_logo, x_logo } from '@/lib/assets'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+function Footer() {
+  return (
+    <footer className="bg-[#D6F2FE] px-44 py-16 flex justify-between items-start gap-8 mx-auto lg:flex-row flex-col">
+      <div className="grid gap-2">
+        <Link className="flex items-center gap-2" href="#">
+          <Image
+            src="https://placehold.co/20x20"
+            alt="SparkChain Logo"
+            width={20}
+            height={20}
+
+          />
+          <span className="font-semibold text-orange-500 text-xl">Sparkpoint</span>
+        </Link>
+        <div className="flex gap-4 items-center justify-start">
+          <Link href="https://facebook.com/sparkpointio" target='_blank'>
+            <Image
+              src={fb_logo}
+              alt="Facebook Logo"
+              width={32}
+              height={32}
+            />
+          </Link>
+          <Link href="https://x.com/sparkpointio" target='_blank'>
+            <Image
+              src={x_logo}
+              alt="X(twitter) Logo"
+              width={20}
+              height={20}
+
+            />
+          </Link>
+          <Link href="https://discord.gg/VPDh6Hq8JQ" target='_blank'>
+            <Image
+              src={discord_logo}
+              alt="Discord Logo"
+              width={24}
+              height={24}
+            />
+          </Link>
+          <Link href="https://t.me/SparkpointOfficial" target='_blank'>
+            <Image
+              src={telegram_logo}
+              alt="Telegram Logo"
+              width={24}
+              height={24}
+            />
+          </Link>
+        </div>
+        <p className="text-sm text-gray-600">
+          © {new Date().getFullYear()} SparkPoint Technologies Inc. All rights reserved.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-medium">About Us</h4>
+        <div className="mt-4 space-y-2">
+          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+            Team
+          </Link>
+          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+            SPARK Token
+          </Link>
+          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+            Support
+          </Link>
+        </div>
+      </div>
+      <div>
+        <h4 className="font-medium">Legal</h4>
+        <div className="mt-4 space-y-2">
+          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+            Terms of Service
+          </Link>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer;
