@@ -12,62 +12,74 @@ export function Footer() {
     {
       label: "HOME",
       url: "#",
-      col: 1
+      col: 1,
+      target: "_self"
     },
     {
       label: "ECOSYSTEM",
       url: "#",
-      col: 1
+      col: 1,
+      target: "_self"
     },
     {
       label: "PRODUCTS",
       url: "#",
-      col: 1
+      col: 1,
+      target: "_self"
     },
     {
       label: "COMMUNITY",
       url: "#",
-      col: 1
+      col: 1,
+      target: "_self"
     },
     {
       label: "BLOG",
       url: "#",
-      col: 1
+      col: 1,
+      target: "_self"
     },
     {
       label: "NEWS",
       url: "#",
-      col: 1
+      col: 1,
+      target: "_self"
     },
     {
       label: "CONTACT",
-      url: "#",
-      col: 1
+      url: "mailto:support@sparkpoint.io",
+      col: 1,
+      target: "_self"
     },
     {
       label: "SRK TOKEN",
       url: "#",
-      col: 2
+      col: 2,
+      target: "_self"
     },
     {
       label: "SPARKPOINT WALLET",
       url: "#",
-      col: 2
+      col: 2,
+      target: "_self"
     },
     {
       label: "TEAM",
       url: "#",
-      col: 3
+      col: 3,
+      target: "_self"
     },
     {
       label: "ROADMAP",
       url: "#",
-      col: 3
+      col: 3,
+      target: "_self"
     },
     {
       label: "ABOUT US",
       url: "#",
-      col: 3
+      col: 3,
+      target: "_self"
     },
   ]
   return (
@@ -124,11 +136,11 @@ export function Footer() {
         {[1, 2, 3].map(col => (
           <div key={col} className="flex flex-col gap-2">
             {footer_links.filter(link => link.col === col).map(link => (
-              <Link href={link.url} key={link.label} className="text-sm hover:text-gray-400">
+              <Link href={link.url} key={link.label} className="text-sm hover:text-gray-400" target={link.target}>
                 {link.label}
               </Link>
             ))}
-          </div>
+          </div>  
         ))}
       </div>
     </footer>
