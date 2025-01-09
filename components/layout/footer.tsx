@@ -1,17 +1,18 @@
 "use client"
 
-import { discord_logo, fb_logo, sparkpoint_logo, telegram_logo, x_logo } from '@/lib/assets'
+import { discord_logo, fb_logo, sparkpoint_logo_full_light, telegram_logo, x_logo } from '@/lib/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function Footer() {
+// TODO: Finish footer
+export function Footer() {
   return (
     <footer className="bg-[#20282A] text-white md:px-44 p-10 py-16 flex justify-between items-start gap-8 mx-auto lg:flex-row flex-col">
       <div className="grid gap-2">
         <Link className="flex items-center gap-2" href="#">
           <Image
-            src={sparkpoint_logo}
+            src={sparkpoint_logo_full_light}
             alt="SparkPoint Logo"
             className="h-8 w-fit"
           />
@@ -84,5 +85,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer;

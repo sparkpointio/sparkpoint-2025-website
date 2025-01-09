@@ -31,7 +31,7 @@ const SparkAgent = () => {
     }
   ]
   return (
-    <section className="bg-white p-10 md:px-12 md:py-20 grid md:grid-cols-2 gap-4 place-content-center">
+    <section className="bg-white p-10 md:px-12 md:py-20 grid md:grid-cols-2 gap-4 place-content-center container mx-auto">
       <div className="flex flex-col justify-between gap-4">
         <div className="grid">
           <p>The flagship application: (Coming Soon!)</p>
@@ -58,7 +58,7 @@ const SparkAgent = () => {
 
 function Card({ image, title, description }: { image: string | StaticImport, title: string, description: string }) {
   return (
-    <div className='flex flex-col items-center gap-4 border-2 border-black rounded-2xl p-4 hover:cursor-pointer'>
+    <div className='flex flex-col items-center gap-4 border-2 md:h-[250px] md:w-[300px] border-black rounded-2xl p-4 hover:cursor-pointer'>
       <Image src={image} alt={title} width={50} height={50} />
       <h3 className='text-xl font-bold text-center'>{title}</h3>
       <p className='text-gray-600 text-center'>{description}</p>

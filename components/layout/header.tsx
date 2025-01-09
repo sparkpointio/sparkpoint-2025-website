@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
-import { sparkpoint_logo } from '@/lib/assets';
+import { sparkpoint_logo_full_dark } from '@/lib/assets';
 
 const Header = ({ className }: { className?: string }) => {
 
@@ -35,7 +35,9 @@ const Header = ({ className }: { className?: string }) => {
         }
       }
     }
-    isOpen && setIsOpen(!isOpen);
+    if (isOpen) {
+      setIsOpen(false);
+    }
   });
   return (
     <AnimatePresence mode="wait">
@@ -60,7 +62,7 @@ const Header = ({ className }: { className?: string }) => {
         {/* Mobile Menu Button */}
         <div className="absolute -top-1 md:hidden flex items-center justify-between w-full px-4 py-2">
           <Image
-            src={sparkpoint_logo}
+            src={sparkpoint_logo_full_dark}
             alt="SparkPoint Logo"
             className="md:h-8 h-4 w-fit"
           />
@@ -73,7 +75,7 @@ const Header = ({ className }: { className?: string }) => {
           (
             <div className='hidden md:flex items-center justify-between w-full'>
               <Image
-                src={sparkpoint_logo}
+                src={sparkpoint_logo_full_dark}
                 alt="SparkPoint Logo"
                 className="h-8 w-fit"
               />
@@ -81,13 +83,15 @@ const Header = ({ className }: { className?: string }) => {
                 <Link href="#" className="text-gray-600 hover:text-gray-900">
                   Ecosystem
                 </Link>
-                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                <Link target='_blank' href="https://docs.sparkchain.network/" className="text-gray-600 hover:cursor-pointer hover:text-gray-900" title='View Documentation'>
                   Docs
                 </Link>
               </nav>
-              <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
-                Testnet Live!
-              </button>
+              <Link href="https://testnet-explorer.sparkpoint.network/" target='_blank'>
+                <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
+                  Testnet Live!
+                </button>
+              </Link>
             </div>
           )
         }
@@ -104,13 +108,16 @@ const Header = ({ className }: { className?: string }) => {
                 <Link href="#" className="text-gray-600 hover:text-gray-900">
                   Ecosystem
                 </Link>
-                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                <Link href="https://docs.sparkchain.network/" target='_blank' className="text-gray-600 hover:text-gray-900">
                   Docs
                 </Link>
+
               </nav>
-              <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
-                Testnet Live!
-              </button>
+              <Link href="https://testnet-explorer.sparkpoint.network/" target='_blank'>
+                <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
+                  Testnet Live!
+                </button>
+              </Link>
             </motion.div>
           )}
         </AnimatePresence>
