@@ -7,7 +7,7 @@ const CommunitySection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-[#316DB5] from-[10%] via-white to-[#F78F36]">
       <div className="mx-auto text-center">
-        <p className="text-lg  text-gray-600">
+        <p className="text-lg max-w-lg mx-auto">
           At the heart of everything we do is a deep commitment
           to the people who make our vision possible
         </p>
