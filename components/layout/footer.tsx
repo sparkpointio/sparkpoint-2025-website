@@ -60,13 +60,13 @@ export function Footer() {
       <div>
         <h4 className="font-medium">About Us</h4>
         <div className="mt-4 space-y-2">
-          <Link href="#" className="block text-sm hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-400">
             Team
           </Link>
-          <Link href="#" className="block text-sm hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-400">
             SPARK Token
           </Link>
-          <Link href="#" className="block text-sm hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-400">
             Support
           </Link>
         </div>
@@ -74,10 +74,10 @@ export function Footer() {
       <div>
         <h4 className="font-medium">Legal</h4>
         <div className="mt-4 space-y-2">
-          <Link href="#" className="block text-sm hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-400">
             Privacy Policy
           </Link>
-          <Link href="#" className="block text-sm hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-400">
             Terms of Service
           </Link>
         </div>
