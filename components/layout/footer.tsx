@@ -7,6 +7,69 @@ import React from 'react'
 
 // TODO: Finish footer
 export function Footer() {
+
+  const footer_links = [
+    {
+      label: "HOME",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "ECOSYSTEM",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "PRODUCTS",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "COMMUNITY",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "BLOG",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "NEWS",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "CONTACT",
+      url: "#",
+      col: 1
+    },
+    {
+      label: "SRK TOKEN",
+      url: "#",
+      col: 2
+    },
+    {
+      label: "SPARKPOINT WALLET",
+      url: "#",
+      col: 2
+    },
+    {
+      label: "TEAM",
+      url: "#",
+      col: 3
+    },
+    {
+      label: "ROADMAP",
+      url: "#",
+      col: 3
+    },
+    {
+      label: "ABOUT US",
+      url: "#",
+      col: 3
+    },
+  ]
   return (
     <footer className="bg-[#20282A] text-white md:px-44 p-10 py-16 flex justify-between items-start gap-8 mx-auto lg:flex-row flex-col">
       <div className="grid gap-2">
@@ -57,30 +120,16 @@ export function Footer() {
         </p>
       </div>
 
-      <div>
-        <h4 className="font-medium">About Us</h4>
-        <div className="mt-4 space-y-2">
-          <Link href="#" className="block text-sm hover:text-gray-400">
-            Team
-          </Link>
-          <Link href="#" className="block text-sm hover:text-gray-400">
-            SPARK Token
-          </Link>
-          <Link href="#" className="block text-sm hover:text-gray-400">
-            Support
-          </Link>
-        </div>
-      </div>
-      <div>
-        <h4 className="font-medium">Legal</h4>
-        <div className="mt-4 space-y-2">
-          <Link href="#" className="block text-sm hover:text-gray-400">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="block text-sm hover:text-gray-400">
-            Terms of Service
-          </Link>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {[1, 2, 3].map(col => (
+          <div key={col} className="flex flex-col gap-2">
+            {footer_links.filter(link => link.col === col).map(link => (
+              <Link href={link.url} key={link.label} className="text-sm hover:text-gray-400">
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        ))}
       </div>
     </footer>
   )
