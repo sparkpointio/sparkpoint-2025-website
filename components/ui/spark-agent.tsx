@@ -39,7 +39,7 @@ const SparkAgent = () => {
     <section className="container mx-auto px-4 py-12 md:py-20">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
         {/* Left Content */}
-        <div className="flex flex-col justify-center gap-6">
+        <div className="flex flex-col justify-between gap-6">
           <div>
             <p className="mb-2">The flagship application: (Coming Soon!)</p>
             <h2 className="text-4xl font-bold">SparkAgent: AI Agent Launchpad</h2>
