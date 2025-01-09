@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image'
-import { arbitrum_arb_logo_full } from '@/lib/assets';
+import { alchemy_logo, arbitrum_arb_logo_full } from '@/lib/assets';
 
 const TechnologyStack = () => {
   return (
@@ -73,7 +73,7 @@ const TechnologyStack = () => {
             height={24}
           />
           <Image
-            src="https://placehold.co/100x24"
+            src={alchemy_logo}
             alt="Alchemy Logo"
             width={100}
             height={24}

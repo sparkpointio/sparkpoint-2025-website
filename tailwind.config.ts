@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        fraunces: ['var(--font-fraunces)', 'serif'],
+        alegreya: ['var(--font-alegreya)', 'serif'],
         sans: ['var(--font-inter)', 'sans-serif'],
       },
       keyframes: {

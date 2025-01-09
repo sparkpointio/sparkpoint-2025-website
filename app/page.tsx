@@ -9,9 +9,11 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Hero />
       <SparkAgent />
+      <CommunitySection />
+      {/* <SparkAgent />
       <TechnologyStack />
       <CommunitySection />
-      <SparkToken />
+      <SparkToken /> */}
     </div>
   )
 }

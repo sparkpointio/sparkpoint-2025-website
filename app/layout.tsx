@@ -1,23 +1,18 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Fraunces } from "next/font/google";
+import { Alegreya } from "next/font/google";
+import localFont from 'next/font/local';
 import Header from '@/components/layout/header'
 import Footer from '@/components/layout/footer'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const neogrotesk_regular = localFont({ src: '../lib/assets/fonts/neogrotesk-regular.otf' });
+const neogrotesk_bold = localFont({ src: '../lib/assets/fonts/neogrotesk-bold.otf' });
+const neogrotesk_light = localFont({ src: '../lib/assets/fonts/neogrotesk-light.otf' });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const fraunces = Fraunces({
-  variable: '--font-fraunces',
-  subsets: ['latin'],
+export const alegreya_regular = Alegreya({
+  variable: '--font-alegreya',
 })
+
 
 export const metadata: Metadata = {
   title: 'Sparkpoint',
@@ -32,9 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
+        className={`${neogrotesk_regular.className} ${neogrotesk_bold.className} ${neogrotesk_light.className}  antialiased`}
       >
-        {/* Header */}
         <Header />
         {children}
         {/* Footer */}

@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 import {
   motion,
   AnimatePresence,
@@ -10,12 +11,14 @@ import {
 } from "framer-motion";
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
+import { sparkpoint_logo } from '@/lib/assets';
 
 const Header = ({ className }: { className?: string }) => {
 
   const { scrollYProgress } = useScroll();
-
-  const [visible, setVisible] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -32,6 +35,7 @@ const Header = ({ className }: { className?: string }) => {
         }
       }
     }
+    isOpen && setIsOpen(!isOpen);
   });
   return (
     <AnimatePresence mode="wait">
@@ -48,31 +52,68 @@ const Header = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "fixed top-4 left-0 right-0 z-50 flex mx-44 items-center justify-evenly p-4 bg-[#EBEBEB] rounded-2xl",
+          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 bg-white border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-24 xl:mx-10 px-4 md:px-12 py-4",
           className
         )}
       >
-        <div className="flex flex-1 items-center gap-2">
+
+        {/* Mobile Menu Button */}
+        <div className="absolute -top-1 md:hidden flex items-center justify-between w-full px-4 py-2">
           <Image
-            src="https://placehold.co/24x24"
+            src={sparkpoint_logo}
             alt="SparkPoint Logo"
-            width={24}
-            height={24}
-            className="h-6 w-6"
+            className="md:h-8 h-4 w-fit"
           />
-          <span className="font-medium text-lg">Sparkpoint</span>
+          <button onClick={toggleMenu} className="text-black">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-        <nav className="flex flex-1 items-center gap-6">
-          <Link href="#" className="text-gray-600 hover:text-gray-900">
-            Ecosystem
-          </Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900">
-            Docs
-          </Link>
-        </nav>
-        <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none" })}>
-          Launch App
-        </button>
+
+        {!isOpen &&
+          (
+            <div className='hidden md:flex items-center justify-between w-full'>
+              <Image
+                src={sparkpoint_logo}
+                alt="SparkPoint Logo"
+                className="h-8 w-fit"
+              />
+              <nav className="flex items-center justify-center gap-6">
+                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                  Ecosystem
+                </Link>
+                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                  Docs
+                </Link>
+              </nav>
+              <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
+                Testnet Live!
+              </button>
+            </div>
+          )
+        }
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="w-full md:hidden grid items-center gap-4 mt-2 px-4"
+            >
+              <nav className="flex flex-col items-center justify-center gap-6">
+                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                  Ecosystem
+                </Link>
+                <Link href="#" className="text-gray-600 hover:text-gray-900">
+                  Docs
+                </Link>
+              </nav>
+              <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
+                Testnet Live!
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
     </AnimatePresence>
   );

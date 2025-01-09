@@ -1,23 +1,20 @@
 "use client"
 
-import { discord_logo, fb_logo, telegram_logo, x_logo } from '@/lib/assets'
+import { discord_logo, fb_logo, sparkpoint_logo, telegram_logo, x_logo } from '@/lib/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-[#D6F2FE] px-44 py-16 flex justify-between items-start gap-8 mx-auto lg:flex-row flex-col">
+    <footer className="bg-[#20282A] text-white md:px-44 p-10 py-16 flex justify-between items-start gap-8 mx-auto lg:flex-row flex-col">
       <div className="grid gap-2">
         <Link className="flex items-center gap-2" href="#">
           <Image
-            src="https://placehold.co/20x20"
-            alt="SparkChain Logo"
-            width={20}
-            height={20}
-
+            src={sparkpoint_logo}
+            alt="SparkPoint Logo"
+            className="h-8 w-fit"
           />
-          <span className="font-semibold text-orange-500 text-xl">Sparkpoint</span>
         </Link>
         <div className="flex gap-4 items-center justify-start">
           <Link href="https://facebook.com/sparkpointio" target='_blank'>
@@ -54,7 +51,7 @@ function Footer() {
             />
           </Link>
         </div>
-        <p className="text-sm text-gray-600">
+        <p className="text-sm">
           © {new Date().getFullYear()} SparkPoint Technologies Inc. All rights reserved.
         </p>
       </div>
@@ -62,13 +59,13 @@ function Footer() {
       <div>
         <h4 className="font-medium">About Us</h4>
         <div className="mt-4 space-y-2">
-          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-900">
             Team
           </Link>
-          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-900">
             SPARK Token
           </Link>
-          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-900">
             Support
           </Link>
         </div>
@@ -76,10 +73,10 @@ function Footer() {
       <div>
         <h4 className="font-medium">Legal</h4>
         <div className="mt-4 space-y-2">
-          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-900">
             Privacy Policy
           </Link>
-          <Link href="#" className="block text-sm text-gray-600 hover:text-gray-900">
+          <Link href="#" className="block text-sm hover:text-gray-900">
             Terms of Service
           </Link>
         </div>
