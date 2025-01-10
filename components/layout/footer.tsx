@@ -130,6 +130,14 @@ export function Footer() {
         <p className="text-sm">
           © {new Date().getFullYear()} SparkPoint Technologies Inc. All rights reserved.
         </p>
+        <div className="flex gap-3 items-center justify-start mt-2">
+          <Link href="#" className="text-sm hover:text-gray-400">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="text-sm hover:text-gray-400">
+            FAQ
+          </Link>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
