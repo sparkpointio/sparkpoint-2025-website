@@ -54,7 +54,7 @@ const Header = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 bg-white border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-24 xl:mx-10 px-4 md:px-12 py-4",
+          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 bg-white border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-24 xl:mx-auto px-4 md:px-12 py-4 max-w-screen-lg",
           className
         )}
       >

@@ -36,7 +36,7 @@ const SparkAgent = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 md:py-20">
+    <section className="container mx-auto px-6 md:px-16 py-12 md:py-20">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
         {/* Left Content */}
         <div className="flex flex-col justify-between gap-6">
@@ -45,7 +45,7 @@ const SparkAgent = () => {
             <h2 className="text-4xl font-bold">SparkAgent: AI Agent Launchpad</h2>
           </div>
 
-          <p className='text-2xl'>
+          <p className='text-2xl max-w-md'>
             SparkAgent empowers users to launch their own AI agents with no-code tools,
             decentralized transparency, and community-driven innovation&mdash;creating
             tailored AI solutions for Web3 projects using cutting-edge blockchain technology.
@@ -92,7 +92,7 @@ function Card({
   description: string
 }) {
   return (
-    <div className="flex flex-col items-center p-6 gap-4 border-2 border-black rounded-2xl hover:cursor-pointer h-full">
+    <div className="flex flex-col items-center p-6 gap-4 border-2 border-black rounded-2xl hover:cursor-pointer h-full active:drop-shadow-none transition-all duration-200 hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       <Image
         src={image}
         alt={title}
