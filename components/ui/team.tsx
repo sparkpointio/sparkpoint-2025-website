@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image'
 import { team_placeholder } from "@/lib/assets";
 import Link from 'next/link'
@@ -103,7 +104,7 @@ export function Team() {
 
 function Card({ image, name, role, socials }: {
   image: string | StaticImageData, name: string, role: string, socials: {
-    icon: object,
+    icon: IconProp,
     url: string
   }[]
 }) {
