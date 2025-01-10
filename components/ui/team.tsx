@@ -88,7 +88,7 @@ export function Team() {
     }
   ]
   return (
-    <section className="px-6 py-10 md:px-20 bg-gradient-to-br from-[#3C8AC8] to-[#D8DDC7]">
+    <section className="px-6 py-10 md:px-20 bg-gradient-to-t from-[#F78F36] to-[#F1EAA2]">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold text-left mt-4 mb-8">Meet the team</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-[85%] mx-auto">
