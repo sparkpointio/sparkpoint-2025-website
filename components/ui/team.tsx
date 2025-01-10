@@ -103,7 +103,7 @@ export function Team() {
 
 function Card({ image, name, role, socials }: {
   image: string | StaticImageData, name: string, role: string, socials: {
-    icon: any,
+    icon: object,
     url: string
   }[]
 }) {
