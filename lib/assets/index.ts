@@ -1,8 +1,4 @@
 export { default as arbitrum_arb_logo_full } from './arbitrum-arb-logo-full.svg'
-export { default as x_logo } from './x-logo.svg'
-export { default as fb_logo } from './fb-logo.svg'
-export { default as discord_logo } from './discord-logo.svg'
-export { default as telegram_logo } from './telegram-logo.svg'
 export { default as alchemy_logo } from './alchemy-logo.svg'
 export { default as gradient_hero } from './gradient-hero.svg'
 export { default as sparkpoint_logo_full_dark } from './sparkpoint-logo-full-dark.svg'
