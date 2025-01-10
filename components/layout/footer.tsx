@@ -55,13 +55,13 @@ export function Footer() {
       label: "SRK TOKEN",
       url: "https://etherscan.io/token/0x0488401c3f535193fa8df029d9ffe615a06e74e6",
       col: 2,
-      target: "_self"
+      target: "_blank"
     },
     {
       label: "SPARKPOINT WALLET",
       url: "https://play.google.com/store/apps/details?id=com.sparkpoint",
       col: 2,
-      target: "_self"
+      target: "_blank"
     },
     {
       label: "TEAM",
