@@ -19,7 +19,7 @@ export function Footer() {
     },
     {
       label: "ECOSYSTEM",
-      url: "#",
+      url: "https://medium.com/theecosystem",
       col: 1,
       target: "_self"
     },
@@ -100,7 +100,7 @@ export function Footer() {
     },
     {
       icon: faInstagram,
-      href: "#"
+      href: "https://www.instagram.com/sparkpointio"
     },
     {
       icon: faDiscord,
@@ -108,15 +108,15 @@ export function Footer() {
     },
     {
       icon: faYoutube,
-      href: "#"
+      href: "https://www.youtube.com/@sparkpointio"
     },
     {
       icon: faMedium,
-      href: "#"
+      href: "https://medium.com/theecosystem"
     },
     {
       icon: faReddit,
-      href: "#"
+      href: "https://www.reddit.com/user/sparkpointio/"
     },
     {
       icon: faTelegram,

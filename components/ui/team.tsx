@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image'
 import { team_placeholder } from "@/lib/assets";
@@ -40,6 +40,7 @@ export function Team() {
       name: "Bernard Historillo",
       role: "Blockchain and AI Developer",
       socials: [
+        { icon: faXTwitter, url: "https://x.com/bernhistorillo" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/bernhistorillo/" }
       ]
     },
@@ -57,6 +58,7 @@ export function Team() {
       name: "Karan Sharma",
       role: "Partnership and Outreach",
       socials: [
+        { icon: faXTwitter, url: "https://x.com/iamkaransharmaa" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/karan-sharma-41995aa0" }
       ]
     },
@@ -65,7 +67,8 @@ export function Team() {
       name: "Tony JRNY Crypto",
       role: "Marketing Advisor",
       socials: [
-        { icon: faXTwitter, url: "https://x.com/JRNYcrypto" }
+        { icon: faXTwitter, url: "https://x.com/JRNYcrypto" },
+        { icon: faYoutube, url: "https://www.youtube.com/@JRNYCrypto" }
       ]
     },
     {
@@ -90,7 +93,7 @@ export function Team() {
   return (
     <section className="px-6 py-10 md:px-20 bg-gradient-to-t from-[#F78F36] to-[#F1EAA2]">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold text-left mt-4 mb-8">Meet the team</h1>
+        <h1 className="text-4xl font-bold text-center mt-4 mb-8">Meet the team</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-[85%] mx-auto">
           {team.map((member, index) => (
             <Card key={index} {...member} />
