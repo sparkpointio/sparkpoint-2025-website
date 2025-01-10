@@ -16,7 +16,7 @@ export function About() {
           </p>
         </div>
         <p className="text-2xl">
-          As a guarantee Alchemy and Arbitrum, we leverage cutting-edge technology to deliver
+          As a grantee Alchemy and Arbitrum, we leverage cutting-edge technology to deliver
           scalable, secure, and transparent solutions. Powered by Arbitrum Orbit, Our Layer 2 blockchain bridges traditional and
           decentralized technologies, driving continous
           innovation and community-driven growth.
