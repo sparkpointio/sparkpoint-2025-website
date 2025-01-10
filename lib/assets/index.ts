@@ -8,3 +8,5 @@ export { default as no_code_integration_logo } from './no-code-integration-logo.
 export { default as transparency_logo } from './transparency-logo.svg'
 export { default as decentralized_logo } from './decentralized-logo.svg'
 export { default as community_driven_logo } from './community-driven-logo.svg'
+export { default as rocket } from './rocket.png'
+export { default as team_placeholder } from './team-placeholder.jpg'

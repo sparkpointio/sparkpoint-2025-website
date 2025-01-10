@@ -1,5 +1,6 @@
 import CommunitySection from '@/components/ui/community-section'
 import Hero from '@/components/ui/hero'
+import { Roadmap } from '@/components/ui/roadmap'
 import SparkAgent from '@/components/ui/spark-agent'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Hero />
       <SparkAgent />
+      <Roadmap />
       <CommunitySection />
     </div>
   )
