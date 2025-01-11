@@ -18,7 +18,7 @@ const Hero = () => {
     <section className="text-center  relative w-full h-screen bg-gradient-to-tr from-[#F78F36] from-[25%] via-white to-[#316DB5]">
       <div className='m-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full'>
         <h1 className="font-alegreya text-4xl md:text-5xl leading-tight text-center mt-24">
-          Bringing AI and Blockchain,
+          SparkPoint Brings AI and Blockchain
           <br />
           Together to Spark Growth
         </h1>
