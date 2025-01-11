@@ -12,6 +12,8 @@ import {
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
 import { sparkpoint_logo_full_dark } from '@/lib/assets';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 
 const Header = ({ className }: { className?: string }) => {
 
@@ -79,14 +81,11 @@ const Header = ({ className }: { className?: string }) => {
                 alt="SparkPoint Logo"
                 className="h-8 w-fit"
               />
-              <nav className="flex items-center justify-center gap-6">
-                <Link href="#" className="text-gray-600 hover:text-gray-900">
-                  Ecosystem
-                </Link>
-                <Link target='_blank' href="https://docs.sparkchain.network/" className="text-gray-600 hover:cursor-pointer hover:text-gray-900" title='View Documentation'>
-                  Docs
-                </Link>
-              </nav>
+              <div className="flex-grow"></div>
+              <Link href="https://t.me/SparkpointOfficial" className="text-gray-600 hover:text-gray-900 mr-3" target='_blank'>
+                <span className="mr-1">Join Community</span>
+                <FontAwesomeIcon icon={faTelegram} className="text-gray-600 group-hover:text-gray-900 text-xl" />
+              </Link>
               <Link href="https://testnet-explorer.sparkpoint.network/" target='_blank'>
                 <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
                   Testnet Live!
@@ -104,14 +103,11 @@ const Header = ({ className }: { className?: string }) => {
               exit={{ opacity: 0, height: 0 }}
               className="w-full md:hidden grid items-center gap-4 mt-2 px-4"
             >
-              <nav className="flex flex-col items-center justify-center gap-6">
-                <Link href="#" className="text-gray-600 hover:text-gray-900">
-                  Ecosystem
+              <nav className="flex flex-col items-center justify-center gap-6 mt-4">
+                <Link href="https://t.me/SparkpointOfficial" className="text-gray-600 hover:text-gray-900 mr-3" target='_blank'>
+                  <span className="mr-1">Join Community</span>
+                  <FontAwesomeIcon icon={faTelegram} className="text-gray-600 group-hover:text-gray-900 text-xl" />
                 </Link>
-                <Link href="https://docs.sparkchain.network/" target='_blank' className="text-gray-600 hover:text-gray-900">
-                  Docs
-                </Link>
-
               </nav>
               <Link href="https://testnet-explorer.sparkpoint.network/" target='_blank'>
                 <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
