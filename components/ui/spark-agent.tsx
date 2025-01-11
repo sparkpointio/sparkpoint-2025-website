@@ -41,7 +41,6 @@ const SparkAgent = () => {
         {/* Left Content */}
         <div className="flex flex-col justify-between gap-6">
           <div>
-            <p className="mb-2">The flagship application: (Coming Soon!)</p>
             <h2 className="text-4xl font-bold">SparkAgent: AI Agent Launchpad</h2>
           </div>
 
