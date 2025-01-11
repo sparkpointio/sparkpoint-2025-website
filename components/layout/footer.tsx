@@ -24,30 +24,6 @@ export function Footer() {
       target: "_self"
     },
     {
-      label: "PRODUCTS",
-      url: "#",
-      col: 1,
-      target: "_self"
-    },
-    {
-      label: "COMMUNITY",
-      url: "#",
-      col: 1,
-      target: "_self"
-    },
-    {
-      label: "BLOG",
-      url: "#",
-      col: 1,
-      target: "_self"
-    },
-    {
-      label: "NEWS",
-      url: "#",
-      col: 1,
-      target: "_self"
-    },
-    {
       label: "CONTACT",
       url: "mailto:support@sparkpoint.io",
       col: 1,
@@ -56,12 +32,6 @@ export function Footer() {
     {
       label: "SRK TOKEN",
       url: "https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6",
-      col: 2,
-      target: "_blank"
-    },
-    {
-      label: "SPARKPOINT WALLET",
-      url: "https://play.google.com/store/apps/details?id=com.sparkpoint",
       col: 2,
       target: "_blank"
     },
