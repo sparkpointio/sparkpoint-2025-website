@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image'
-import { team_placeholder } from "@/lib/assets";
+import { isma, harvz, aldrek, bern, yurie, karan, jrny, andy, rico } from "@/lib/assets";
 import Link from 'next/link'
 
 export function Team() {
   const team = [
     {
-      image: team_placeholder,
+      image: isma,
       name: "Ismael Jerusalem",
       role: "CEO",
       socials: [
@@ -18,7 +18,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: harvz,
       name: "Harvey Javier",
       role: "CTO",
       socials: [
@@ -27,7 +27,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: aldrek,
       name: "Aldrick Bonaobra",
       role: "Lead Blockchain and AI Developer",
       socials: [
@@ -36,7 +36,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: bern,
       name: "Bernard Historillo",
       role: "Blockchain and AI Developer",
       socials: [
@@ -45,7 +45,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: yurie,
       name: "Yurie Takeuchi",
       role: "Community Support",
       socials: [
@@ -54,7 +54,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: karan,
       name: "Karan Sharma",
       role: "Partnership and Outreach",
       socials: [
@@ -63,7 +63,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: jrny,
       name: "Tony JRNY Crypto",
       role: "Marketing Advisor",
       socials: [
@@ -72,7 +72,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: andy,
       name: "Andy Agnas",
       role: "Advisor",
       socials: [
@@ -81,7 +81,7 @@ export function Team() {
       ]
     },
     {
-      image: team_placeholder,
+      image: rico,
       name: "Rico Zuñiga",
       role: "AI Advisor",
       socials: [
