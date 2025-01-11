@@ -55,7 +55,7 @@ export function Footer() {
     },
     {
       label: "SRK TOKEN",
-      url: "https://etherscan.io/token/0x0488401c3f535193fa8df029d9ffe615a06e74e6",
+      url: "https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6",
       col: 2,
       target: "_blank"
     },
