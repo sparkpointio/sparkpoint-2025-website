@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faFacebook, faInstagram, faDiscord, faYoutube, faMedium, faReddit, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGithub, faFacebook, faInstagram, faYoutube, faMedium, faReddit, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // TODO: Finish footer
 export function Footer() {
@@ -101,10 +101,6 @@ export function Footer() {
     {
       icon: faInstagram,
       href: "https://www.instagram.com/sparkpointio"
-    },
-    {
-      icon: faDiscord,
-      href: "https://discord.com/invite/VPDh6Hq8JQ"
     },
     {
       icon: faYoutube,

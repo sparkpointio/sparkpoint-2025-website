@@ -47,7 +47,7 @@ export function Team() {
     {
       image: team_placeholder,
       name: "Yurie Takeuchi",
-      role: "Customer Support",
+      role: "Community Support",
       socials: [
         { icon: faXTwitter, url: "https://x.com/Sparky_SRK" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/yurie-takeuchi" }
