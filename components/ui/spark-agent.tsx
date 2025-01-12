@@ -37,7 +37,7 @@ const SparkAgent = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 max-w-7xl">
+    <section id="sparkagent" className="container mx-auto px-4 py-12 max-w-7xl">
       <div className="space-y-8">
         {/* Header */}
         <div>
