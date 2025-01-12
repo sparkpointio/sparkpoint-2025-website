@@ -31,9 +31,9 @@ export function Waitlist({ children }: { children: React.ReactNode }) {
               height={100}
               className="mb-4"
             />
-            <Dialog.Title className="text-lg font-bold mb-2">Subscribe to our newsletter and stay ahead of the curve</Dialog.Title>
+            <Dialog.Title className="text-lg font-bold mb-2">Join our waitlist and receive a sparking gift from us</Dialog.Title>
             <Dialog.Description className="text-center w-full p-0">
-              Sign up today and be part of the SparkPoint innovation!
+              Sign up today and get the latest inside scoop
             </Dialog.Description>
             <Form.Root className="w-full flex flex-col items-center" onSubmit={handleJoinWaitlist}>
               <Form.Field className="w-full" name="email">

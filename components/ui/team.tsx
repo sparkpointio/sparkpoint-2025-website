@@ -22,7 +22,7 @@ export function Team() {
       name: "Harvey Javier",
       role: "CTO",
       socials: [
-        { icon: faXTwitter, url: "https://x.com/harvzjavier" },
+        { icon: faXTwitter, url: "https://x.com/hsj_sparkpoint" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/harveyjavier/" }
       ]
     },
