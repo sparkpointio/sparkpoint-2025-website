@@ -29,7 +29,7 @@ const solway = Solway({
 
 export const metadata: Metadata = {
   title: 'SparkPoint - The Smart Agents Platform',
-  description: 'We connect blockchain and AI to unlock new possibilties and drive exponential growth for businesses and communities',
+  description: 'We connect blockchain and AI to unlock new possibilities and drive exponential growth for businesses and communities',
 };
 
 export default function RootLayout({

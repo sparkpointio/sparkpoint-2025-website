@@ -18,7 +18,7 @@ const Hero = () => {
           Together to Spark Growth
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-gray-600">
-          We connect blockchain and AI to unlock new possibilties
+          We connect blockchain and AI to unlock new possibilities
           and drive exponential growth for businesses and communities
         </p>
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
