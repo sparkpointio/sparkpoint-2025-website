@@ -18,12 +18,12 @@ const SparkAgent = () => {
       description: 'Launch your AI agent effortlessly without writing a single line of code'
     },
     {
-      image: no_code_integration_logo,
+      image: transparency_logo,
       title: 'Seamless Launch',
       description: 'From concept to launch, SparkAgent makes every step frictionless'
     },
     {
-      image: no_code_integration_logo,
+      image: decentralized_logo,
       title: 'Co-Ownership with Purpose',
       description: 'Empower your community to own a piece of the future'
     },

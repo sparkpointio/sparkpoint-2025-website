@@ -18,6 +18,12 @@ export function Footer() {
       col: 1
     },
     {
+      label: "SRK Token",
+      url: "https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6",
+      target: "_blank",
+      col: 1
+    },
+    {
       label: "CertiK Audit",
       url: "https://drive.google.com/file/d/1BizTH7JZgiYQaJbLyAGTnS83Do3yLvfT/view?usp=sharing",
       target: "_blank",
