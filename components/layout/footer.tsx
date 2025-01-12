@@ -13,8 +13,8 @@ export function Footer() {
   const footer_links = [
     {
       label: "Privacy Policy",
-      url: "#",
-      target: "_self",
+      url: "/privacy-policy.md",
+      target: "_blank",
       col: 1
     },
     {
