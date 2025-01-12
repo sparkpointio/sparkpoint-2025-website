@@ -77,7 +77,7 @@ const Header = ({ className }: { className?: string }) => {
           (
             <div className='hidden md:flex items-center justify-between w-full'>
               <Image
-                src={sparkpoint_logo_full_dark}
+                src={new_sparkpoint_logo_full_dark}
                 alt="SparkPoint Logo"
                 className="h-8 w-fit"
               />
