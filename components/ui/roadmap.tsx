@@ -19,7 +19,8 @@ export function Roadmap() {
         "Expand SparkPoint's AI ecosystem"
       ]
     },
-    { quarter: "Q3",
+    {
+      quarter: "Q3",
       goals: [
         "Launch AI Agents Marketplace",
         "Introduce Fully Autonomous SparkAgent",
@@ -27,7 +28,8 @@ export function Roadmap() {
         "Enable tradable AI agents with on-chain ownership"
       ]
     },
-    { quarter: "Q4",
+    {
+      quarter: "Q4",
       goals: [
         "Introduce Decentralized Agent-Based Blockchain Governance",
         "Launch AI-powered DAO for SparkPoint",
@@ -37,7 +39,7 @@ export function Roadmap() {
     }
   ]
   return (
-    <section className="px-6 py-10 md:px-20 bg-gradient-to-br from-[#3C8AC8] to-[#D8DDC7]">
+    <section id="roadmap" className="px-6 py-10 md:px-20 bg-gradient-to-br from-[#3C8AC8] to-[#D8DDC7]">
       <div className="container mx-auto">
         <h1 className=" text-3xl md:text-4xl lg:text-5xl font-bold my-4 mb-8">ROADMAP {new Date().getFullYear()}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

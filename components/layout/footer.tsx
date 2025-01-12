@@ -37,19 +37,19 @@ export function Footer() {
     },
     {
       label: "TEAM",
-      url: "#",
+      url: "#team",
       col: 2,
       target: "_self"
     },
     {
       label: "ROADMAP",
-      url: "#",
+      url: "#roadmap",
       col: 2,
       target: "_self"
     },
     {
       label: "ABOUT US",
-      url: "#",
+      url: "#about-us",
       col: 2,
       target: "_self"
     },

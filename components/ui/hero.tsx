@@ -1,7 +1,7 @@
 'use client';
 import React, { FormEvent } from 'react';
 import { buttonVariants } from '@/components/variants/button-variants';
-import { alchemy_logo, arbitrum_arb_logo_full, rocket } from '@/lib/assets';
+import { alchemy_logo, arbitrum_arb_logo_full, hero_gradient, rocket } from '@/lib/assets';
 import Image from 'next/image'
 import Link from 'next/link';
 import * as Dialog from "@radix-ui/react-dialog";
@@ -15,7 +15,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="text-center  relative w-full h-screen bg-gradient-to-tr from-[#F78F36] from-[25%] via-white to-[#316DB5]">
+    <section style={{ backgroundImage: `url(${hero_gradient.src})` }} className="text-center bg-cover bg-center bg-no-repeat relative w-full h-screen">
       <div className='m-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full'>
         <h1 className="font-alegreya text-4xl md:text-5xl leading-tight text-center mt-24">
           SparkPoint Brings AI and Blockchain
