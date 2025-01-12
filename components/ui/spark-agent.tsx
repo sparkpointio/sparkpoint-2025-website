@@ -114,7 +114,7 @@ function FeatureCard({
           />
         </div>
         <h3 className="font-bold text-xl">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
   );
