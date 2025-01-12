@@ -6,6 +6,8 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import {
   community_driven_logo,
   no_code_integration_logo,
+  transparency_logo,
+  decentralized_logo,
   sparkagent_launchpad
 } from '@/lib/assets';
 import { Waitlist } from '@/components/ui/waitlist-dialog';
