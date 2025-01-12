@@ -24,19 +24,19 @@ export function Footer() {
       col: 1
     },
     {
-      label: "HOME",
+      label: "Home",
       url: "#",
       target: "_self",
       col: 2
     },
     {
-      label: "ECOSYSTEM",
+      label: "Ecosystem",
       url: "https://medium.com/theecosystem",
       target: "_blank",
       col: 2
     },
     {
-      label: "CONTACT",
+      label: "Contact",
       url: "mailto:support@sparkpoint.io",
       target: "_self",
       col: 2

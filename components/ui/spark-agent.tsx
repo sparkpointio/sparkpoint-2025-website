@@ -54,7 +54,7 @@ const SparkAgent = () => {
             <Image
               src={sparkagent_launchpad}
               alt="SparkAgent Launchpad"
-              className="h-auto rounded-lg shadow-lg"
+              className="h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-200"
             />
           </div>
 
@@ -100,7 +100,7 @@ function FeatureCard({
   description: string
 }) {
   return (
-    <div className="p-6 bg-white rounded-xl border-2 border-black hover:shadow-lg transition-all duration-200 w-64 h-56">
+    <div className="p-6 bg-white rounded-xl border-2 border-black hover:cursor-pointer w-64 h-56 active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       <div className="flex flex-col items-center text-center space-y-3">
         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
           <Image
