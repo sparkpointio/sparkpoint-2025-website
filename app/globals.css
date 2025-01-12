@@ -22,3 +22,32 @@ body {
   font-family: Neogrotesk, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
+
+.custom-bullet {
+  position: relative;
+}
+
+.custom-bullet .bullet {
+  margin-top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px; /* Full circle */
+  background-color: #F78F36;
+  flex-shrink: 0;
+}
+
+.custom-bullet .bullet::after {
+  content: '';
+  position: absolute;
+  margin-top: 10px;
+  top: 6px; /* Aligns with the bottom of the bullet */
+  left: 2px; /* Center the line relative to the bullet */
+  width: 1px;
+  height: calc(100% + 27px); /* Fills the space to the next item */
+  background-color: #F78F36;
+}
+
+.custom-bullet:last-child .bullet::after {
+  display: none; /* Remove the line for the last item */
+}
+
