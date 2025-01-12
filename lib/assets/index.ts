@@ -24,3 +24,4 @@ export { default as new_sparkpoint_logo_w_text } from './new-sparkpoint-logo-w-t
 export { default as new_sparkpoint_logo_full_light } from './new-sparkpoint-logo-full-light.png'
 export { default as new_sparkpoint_logo_full_dark } from './new-sparkpoint-logo-full-dark.png'
 export { default as hero_gradient } from './hero-gradient.png'
+export { default as sparkagent_launchpad } from './sparkagent-launchpad.png'
