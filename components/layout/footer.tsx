@@ -1,6 +1,6 @@
 "use client"
 
-import { sparkpoint_logo_full_light } from '@/lib/assets'
+import { new_sparkpoint_logo_full_light } from '@/lib/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -98,7 +98,7 @@ export function Footer() {
       <div className="grid gap-4">
         <Link className="flex items-center gap-2" href="#">
           <Image
-            src={sparkpoint_logo_full_light}
+            src={new_sparkpoint_logo_full_light}
             alt="SparkPoint Logo"
             className="h-8 w-fit"
           />

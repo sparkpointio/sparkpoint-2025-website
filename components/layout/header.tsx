@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
-import { sparkpoint_logo_full_dark } from '@/lib/assets';
+import { new_sparkpoint_logo_full_dark } from '@/lib/assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 
@@ -64,7 +64,7 @@ const Header = ({ className }: { className?: string }) => {
         {/* Mobile Menu Button */}
         <div className="absolute -top-1 md:hidden flex items-center justify-between w-full px-4 py-2">
           <Image
-            src={sparkpoint_logo_full_dark}
+            src={new_sparkpoint_logo_full_dark}
             alt="SparkPoint Logo"
             className="md:h-8 h-4 w-fit"
           />
