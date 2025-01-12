@@ -4,6 +4,7 @@ import { Alegreya, Righteous, Solway } from "next/font/google";
 import localFont from 'next/font/local';
 import Header from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
+import Script from "next/script";
 
 const neogrotesk_regular = localFont({ src: '../lib/assets/fonts/neogrotesk-regular.otf', variable: '--font-neogrotesk-regular' });
 const neogrotesk_bold = localFont({ src: '../lib/assets/fonts/neogrotesk-bold.otf', variable: '--font-neogrotesk-bold' });
@@ -38,6 +39,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-CN79RFQG3G`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CN79RFQG3G');
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${righteous.variable} ${solway.className}  ${alegreya_regular.variable} ${neogrotesk_regular.variable} ${neogrotesk_bold.variable} ${neogrotesk_light.variable} antialiased`}
       >
