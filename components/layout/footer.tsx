@@ -32,25 +32,25 @@ export function Footer() {
     {
       label: "SRK TOKEN",
       url: "https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6",
-      col: 2,
+      col: 1,
       target: "_blank"
     },
     {
       label: "TEAM",
       url: "#",
-      col: 3,
+      col: 2,
       target: "_self"
     },
     {
       label: "ROADMAP",
       url: "#",
-      col: 3,
+      col: 2,
       target: "_self"
     },
     {
       label: "ABOUT US",
       url: "#",
-      col: 3,
+      col: 2,
       target: "_self"
     },
   ];
@@ -125,8 +125,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {[1, 2, 3].map(col => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {[1, 2].map(col => (
           <div key={col} className="flex flex-col gap-2">
             {footer_links.filter(link => link.col === col).map(link => (
               <Link href={link.url} key={link.label} className="text-sm hover:text-gray-400" target={link.target}>
