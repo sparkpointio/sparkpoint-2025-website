@@ -2,13 +2,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { buttonVariants } from '../variants/button-variants';
-import Link from 'next/link';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import {
   community_driven_logo,
   no_code_integration_logo,
   sparkagent_launchpad
 } from '@/lib/assets';
+import { Waitlist } from '@/components/ui/waitlist-dialog';
 
 const SparkAgent = () => {
   const features = [
@@ -39,7 +39,7 @@ const SparkAgent = () => {
       <div className="space-y-8">
         {/* Header */}
         <div>
-          <h2 className="text-4xl font-bold mb-4">SparkAgent: AI Agent Launchpad</h2>
+          <h2 className="text-4xl font-bold mb-4 font-[family-name:var(--font-neogrotesk-bold)]">SparkAgent: AI Agent Launchpad</h2>
           <p className="text-2xl">
             SparkAgent empowers users to launch their own AI agents with no-code tools,
             decentralized transparency, and community-driven innovation—creating tailored
@@ -74,17 +74,17 @@ const SparkAgent = () => {
         </div>
 
         {/* Launch Button */}
-        <Link href="#" className="w-full sm:w-auto mt-8 mx-auto flex justify-center">
+        <Waitlist>
           <button
             className={buttonVariants({
               variant: "ghost",
               size: "2xl",
-              className: 'w-64 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none'
+              className: 'sm:w-auto mt-8 mx-auto flex justify-center w-64 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none'
             })}
           >
             Launching Soon!
           </button>
-        </Link>
+        </Waitlist>
       </div>
     </section >
   );

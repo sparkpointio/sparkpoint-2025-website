@@ -12,19 +12,34 @@ export function Footer() {
 
   const footer_links = [
     {
+      label: "Privacy Policy",
+      url: "#",
+      target: "_self",
+      col: 1
+    },
+    {
+      label: "CertiK Audit",
+      url: "https://drive.google.com/file/d/1BizTH7JZgiYQaJbLyAGTnS83Do3yLvfT/view?usp=sharing",
+      target: "_blank",
+      col: 1
+    },
+    {
       label: "HOME",
       url: "#",
-      target: "_self"
+      target: "_self",
+      col: 2
     },
     {
       label: "ECOSYSTEM",
       url: "https://medium.com/theecosystem",
-      target: "_self"
+      target: "_blank",
+      col: 2
     },
     {
       label: "CONTACT",
       url: "mailto:support@sparkpoint.io",
-      target: "_self"
+      target: "_self",
+      col: 2
     }
   ];
 
@@ -78,26 +93,20 @@ export function Footer() {
           })}
         </div>
         <p className="text-sm">
-          © {new Date().getFullYear()} SparkPoint Technologies Inc. All rights reserved.
+          © {new Date().getFullYear()} SparkPoint Technologies Inc.
         </p>
-        <div className="flex gap-3 items-center justify-start mt-2">
-          <Link href="#" className="text-sm hover:text-gray-400">
-            Privacy Policy
-          </Link>
-          <Link href="https://drive.google.com/file/d/1BizTH7JZgiYQaJbLyAGTnS83Do3yLvfT/view?usp=sharing" className="text-sm hover:text-gray-400" target="_blank">
-            CertiK Audit
-          </Link>
-        </div>
       </div>
 
-      <div className="gap-4">
-        <div className="flex flex-col gap-2">
-          {footer_links.map(link => (
-            <Link href={link.url} key={link.label} className="text-sm hover:text-gray-400" target={link.target}>
-              {link.label}
-            </Link>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {[1, 2].map(col => (
+          <div key={col} className="flex flex-col gap-2">
+            {footer_links.filter(link => link.col === col).map(link => (
+              <Link href={link.url} key={link.label} className="text-sm hover:text-gray-400" target={link.target}>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        ))}
       </div>
     </footer>
   )

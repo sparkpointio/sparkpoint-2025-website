@@ -5,7 +5,7 @@ export function About() {
   return (
     <section id="about" className="container mx-auto px-6 md:px-16 py-12 md:py-20">
       <div className="grid gap-4 place-content-stretch">
-        <h1 className="text-4xl">
+        <h1 className="text-4xl font-[family-name:var(--font-neogrotesk-bold)]">
           <span className="font-bold">SparkPoint.</span> Reignited. Focused. Powered By AI.
         </h1>
         <div className='flex gap-8 md:flex-row flex-col items-center justify-between'>
