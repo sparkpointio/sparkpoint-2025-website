@@ -122,6 +122,9 @@ export function Footer() {
           <Link href="#" className="text-sm hover:text-gray-400">
             FAQ
           </Link>
+          <Link href="https://drive.google.com/file/d/1BizTH7JZgiYQaJbLyAGTnS83Do3yLvfT/view?usp=sharing" className="text-sm hover:text-gray-400" target="_blank">
+            CertiK Audit
+          </Link>
         </div>
       </div>
 
