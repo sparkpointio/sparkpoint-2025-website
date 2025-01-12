@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faFacebook, faInstagram, faYoutube, faMedium, faReddit, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter, faGithub, faFacebook, faInstagram, faYoutube, faMedium, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 // TODO: Finish footer
 export function Footer() {
@@ -34,7 +34,7 @@ export function Footer() {
       href: "https://github.com/sparkpointio"
     },
     {
-      icon: faTwitter,
+      icon: faXTwitter,
       href: "https://x.com/sparkpointio"
     },
     {
@@ -52,10 +52,6 @@ export function Footer() {
     {
       icon: faMedium,
       href: "https://medium.com/theecosystem"
-    },
-    {
-      icon: faReddit,
-      href: "https://www.reddit.com/user/sparkpointio/"
     },
     {
       icon: faTelegram,
@@ -91,9 +87,6 @@ export function Footer() {
         <div className="flex gap-3 items-center justify-start mt-2">
           <Link href="#" className="text-sm hover:text-gray-400">
             Privacy Policy
-          </Link>
-          <Link href="#" className="text-sm hover:text-gray-400">
-            FAQ
           </Link>
           <Link href="https://drive.google.com/file/d/1BizTH7JZgiYQaJbLyAGTnS83Do3yLvfT/view?usp=sharing" className="text-sm hover:text-gray-400" target="_blank">
             CertiK Audit
