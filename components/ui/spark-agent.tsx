@@ -17,7 +17,7 @@ const SparkAgent = () => {
     {
       image: no_code_integration_logo,
       title: 'No-Code, No Hassle',
-      description: 'Launch your AI agent effortlessly without writing a single line of code'
+      description: 'Launch your AI agent without writing a single line of code'
     },
     {
       image: transparency_logo,
