@@ -36,7 +36,7 @@ const SparkAgent = () => {
   ];
 
   return (
-    <section className="container mx-auto px-6 md:px-16 py-12 md:py-20">
+    <section id="sparkagent" className="container mx-auto px-6 md:px-16 py-12 md:py-20">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
         {/* Left Content */}
         <div className="flex flex-col justify-between gap-6">

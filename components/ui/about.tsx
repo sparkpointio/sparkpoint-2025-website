@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function About() {
   return (
-    <section id="about-us" className="container mx-auto px-6 md:px-16 py-12 md:py-20">
+    <section id="about" className="container mx-auto px-6 md:px-16 py-12 md:py-20">
       <div className="grid gap-4 place-content-stretch">
         <h1 className="text-4xl">
           <span className="font-bold">SparkPoint.</span> Reignited. Focused. Powered By AI.

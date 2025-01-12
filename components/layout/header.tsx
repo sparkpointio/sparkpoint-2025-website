@@ -81,14 +81,23 @@ const Header = ({ className }: { className?: string }) => {
                 alt="SparkPoint Logo"
                 className="h-8 w-fit"
               />
-              <div className="flex-grow"></div>
-              <Link href="https://t.me/SparkpointOfficial" className="text-gray-600 flex items-center justify-center hover:text-gray-900 mr-3" target='_blank'>
-                <span className="mr-1">Join Community</span>
-                <FontAwesomeIcon width={30} height={30} icon={faTelegram} className="text-gray-600 group-hover:text-gray-900 text-xl" />
-              </Link>
-              <Link href="https://testnet-explorer.sparkpoint.network/" target='_blank'>
+              <nav className="flex items-center justify-center gap-6">
+                <Link href="#sparkagent" className="text-gray-600 hover:text-gray-900">
+                  SparkAgent
+                </Link>
+                <Link href="#roadmap" className="text-gray-600 hover:text-gray-900">
+                  Roadmap
+                </Link>
+                <Link href="#about" className="text-gray-600 hover:text-gray-900">
+                  About
+                </Link>
+                <Link href="#team" className="text-gray-600 hover:text-gray-900">
+                  Team
+                </Link>
+              </nav>
+              <Link href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
                 <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
-                  Testnet Live!
+                  SRK Token
                 </button>
               </Link>
             </div>
@@ -109,9 +118,9 @@ const Header = ({ className }: { className?: string }) => {
                   <FontAwesomeIcon icon={faTelegram} className="text-gray-600 group-hover:text-gray-900 text-xl" />
                 </Link>
               </nav>
-              <Link href="https://testnet-explorer.sparkpoint.network/" target='_blank'>
+              <Link href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
                 <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
-                  Testnet Live!
+                  SRK Token
                 </button>
               </Link>
             </motion.div>
