@@ -41,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="favicon.ico?v=2" />
-        <meta property="og:image" content="og-image.png" />
+        <meta property="og:image" content="https://sparkpoint.io/og-image.png" />
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-CN79RFQG3G`}
