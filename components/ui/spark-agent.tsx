@@ -41,7 +41,7 @@ const SparkAgent = () => {
       <div className="space-y-8">
         {/* Header */}
         <div>
-          <h2 className="text-4xl font-bold mb-4 font-[family-name:var(--font-neogrotesk-bold)]">SparkAgent: AI Agent Launchpad</h2>
+          <h2 className="text-4xl mb-4 font-[family-name:var(--font-neogrotesk-regular)]">SparkAgent: AI Agent Launchpad</h2>
           <p className="text-2xl">
             SparkAgent empowers users to launch their own AI agents with no-code tools,
             decentralized transparency, and community-driven innovation—creating tailored

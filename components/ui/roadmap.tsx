@@ -41,7 +41,7 @@ export function Roadmap() {
   return (
     <section id="roadmap" className="px-6 py-10 md:px-20 bg-gradient-to-br from-[#3C8AC8] to-[#D8DDC7]">
       <div className="container mx-auto">
-        <h1 className=" text-3xl md:text-4xl lg:text-5xl font-bold my-4 mb-8 font-[family-name:var(--font-neogrotesk-bold)]">ROADMAP {new Date().getFullYear()}</h1>
+        <h1 className=" text-3xl md:text-4xl lg:text-5xl my-4 mb-8 font-[family-name:var(--font-neogrotesk-regular)]">ROADMAP {new Date().getFullYear()}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {quarters.map((quarter) => (
             <Card key={quarter.quarter} title={quarter.quarter} goals={quarter.goals || []} />
