@@ -40,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="favicon.ico?v=2" />
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-CN79RFQG3G`}
