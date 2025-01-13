@@ -18,12 +18,8 @@ export default async function handler(req, res) {
         );
 
         // Create the request to add the email to the contact list
-        const request = mailjetClient.post('contactslist', {
-            body: {
-                Name: 'Subscribers',
-                IsSubscribed: true,
-                Contacts: [{ Email: email }]
-            }
+        const request = mailjetClient.post('contact', { version: 'v3' }).request({
+          Email: email,
         });
 
         const response = await request;

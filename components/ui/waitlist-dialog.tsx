@@ -25,19 +25,18 @@ export function Waitlist({ children }: { children: React.ReactNode }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email }),
+    }).then(async (response) => {
+      const data = await response.json();
+      if (response.ok) {
+        setStatusMessage("Thank you for joining our waitlist!");
+        setEmail(''); // Clear the email field after successful submission
+      } else {
+        setStatusMessage(data.error || "An error occurred.");
+      }
     })
-        .then(async (response) => {
-          const data = await response.json();
-          if (response.ok) {
-            setStatusMessage("Thank you for joining our waitlist!");
-            setEmail(''); // Clear the email field after successful submission
-          } else {
-            setStatusMessage(data.error || "An error occurred.");
-          }
-        })
-        .catch(() => {
-          setStatusMessage("Failed to connect to the server. Please try again.");
-        });
+    .catch(() => {
+      setStatusMessage("Failed to connect to the server. Please try again.");
+    });
   }
 
   const handleDialogClose = () => {
