@@ -53,7 +53,13 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
         
+        {/* Socmed metadata */}
+        <meta name="description" content="We connect blockchain and AI to unlock new possibilities and drive exponential growth for businesses and communities" />
+        <meta property="og:title" content="SparkPoint - The Smart Agents Platform" />
+        <meta property="og:description" content="We connect blockchain and AI to unlock new possibilities and drive exponential growth for businesses and communities" />
         <meta property="og:image" content="/og-image.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sparkpoint.io" />
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-CN79RFQG3G`}
