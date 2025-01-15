@@ -1,40 +1,82 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import React from "react";
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+
 export function Roadmap() {
   const quarters = [
     {
       quarter: 'Q1',
       goals: [
-        "Launch new SparkPoint website",
-        "Announce strategic partnerships",
-        "Bridge SRK to Arbitrum",
-        "Launch SparkAgent AI Launchpad",
-        "Introduce SparkPoint's first SparkAgent"
+        {
+          action: "Launch new SparkPoint website",
+          isCompleted: true,
+        }, {
+          action: "Announce strategic partnerships",
+          isCompleted: false,
+        }, {
+          action: "Bridge SRK to Arbitrum",
+          isCompleted: false,
+        }, {
+          action: "Launch SparkAgent AI Launchpad",
+          isCompleted: false,
+        }, {
+          action: "Introduce SparkPoint's first SparkAgent",
+          isCompleted: false,
+        }
       ]
     },
     {
       quarter: 'Q2',
       goals: [
-        "Launch Trading AI Agent",
-        "Upgrade SparkAgent AI Launchpad new features",
-        "Deploy SparkPoint Blockchain mainnet",
-        "Expand SparkPoint's AI ecosystem"
+        {
+          action: "Launch Trading AI Agent",
+          isCompleted: false,
+        }, {
+          action: "Upgrade SparkAgent AI Launchpad new features",
+          isCompleted: false,
+        }, {
+          action: "Deploy SparkPoint Blockchain mainnet",
+          isCompleted: false,
+        }, {
+          action: "Expand SparkPoint's AI ecosystem",
+          isCompleted: false,
+        }
       ]
     },
     {
       quarter: "Q3",
       goals: [
-        "Launch AI Agents Marketplace",
-        "Introduce Fully Autonomous SparkAgent",
-        "Integrate SRK as native token on SparkPoint Blockchain",
-        "Enable tradable AI agents with on-chain ownership"
+        {
+          action: "Launch AI Agents Marketplace",
+          isCompleted: false,
+        }, {
+          action: "Introduce Fully Autonomous SparkAgent",
+          isCompleted: false,
+        }, {
+          action: "Integrate SRK as native token on SparkPoint Blockchain",
+          isCompleted: false,
+        }, {
+          action: "Enable tradable AI agents with on-chain ownership",
+          isCompleted: false,
+        }
       ]
     },
     {
       quarter: "Q4",
       goals: [
-        "Introduce Decentralized Agent-Based Blockchain Governance",
-        "Launch AI-powered DAO for SparkPoint",
-        "SparkPoint Blockchain cross-chain integrations",
-        "Next-gen SparkAgents for business growth automation"
+        {
+          action: "Introduce Decentralized Agent-Based Blockchain Governance",
+          isCompleted: false,
+        }, {
+          action: "Launch AI-powered DAO for SparkPoint",
+          isCompleted: false,
+        }, {
+          action: "SparkPoint Blockchain cross-chain integrations",
+          isCompleted: false,
+        }, {
+          action: "Next-gen SparkAgents for business growth automation",
+          isCompleted: false,
+        }
       ]
     }
   ]
@@ -57,16 +99,19 @@ function Card({
   goals
 }: {
   title: string,
-  goals: string[]
+  goals: { action: string, isCompleted: boolean }[]
 }) {
   return (
     <div className="flex flex-col bg-white p-6 gap-4 rounded-3xl hover:cursor-pointer h-full active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-[family-name:var(--font-rubik)]">{title}</h1>
-      <ul className="list-disc pl-4 space-y-8">
+      <ul className="list-disc pl-3 space-y-8">
         {goals.map((goal, index) => (
           <li className="text-base relative flex items-start custom-bullet" key={index}>
+            {goal.isCompleted && (
+                <FontAwesomeIcon className="absolute bg-white text-[1.2em] top-[2px] left-[-7px] z-[10]" icon={faCheckCircle} color="#FF6F00" />
+            )}
             <span className="bullet"></span>
-            <span className="ml-2">{goal}</span>
+            <span className="ml-4">{goal.action}</span>
           </li>
         ))}
       </ul>
