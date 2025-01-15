@@ -13,7 +13,7 @@ const Hero = () => {
     <section style={{ backgroundImage: `url(${hero_gradient.src})` }} className="text-center bg-cover bg-center bg-no-repeat relative w-full h-screen">
       <div className='m-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full'>
         <h1 className="neogrotesk_regular text-4xl md:text-5xl leading-tight text-center mt-24">
-          SparkPoint Brings AI and Blockchain
+          <span className="whitespace-nowrap">SparkPoint Brings AI and Blockchain</span>
           <br />
           Together to Spark Growth
         </h1>
