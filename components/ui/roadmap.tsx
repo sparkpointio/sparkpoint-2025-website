@@ -11,10 +11,10 @@ export function Roadmap() {
           action: "Launch new SparkPoint website",
           isCompleted: true,
         }, {
-          action: "Announce strategic partnerships",
+          action: "Bridge SRK to Arbitrum",
           isCompleted: false,
         }, {
-          action: "Bridge SRK to Arbitrum",
+          action: "Announce strategic partnerships",
           isCompleted: false,
         }, {
           action: "Launch SparkAgent AI Launchpad",
