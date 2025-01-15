@@ -41,8 +41,8 @@ const SparkAgent = () => {
       <div className="space-y-8">
         {/* Header */}
         <div>
-          <h2 className="text-4xl font-[family-name:var(--font-rubik-regular)]">SparkAgent: AI Agent Launchpad</h2>
-          <p className="text-2xl font-[family-name:var(--font-poppins-regular)] mt-5">
+          <h2 className="text-4xl font-[family-name:var(--font-rubik)]">SparkAgent: AI Agent Launchpad</h2>
+          <p className="text-2xl font-[family-name:var(--font-poppins)] mt-5">
             SparkAgent empowers users to launch their own AI agents with no-code tools,
             decentralized transparency, and community-driven innovation—creating tailored
             AI solutions for Web3 projects using cutting-edge blockchain technology.
