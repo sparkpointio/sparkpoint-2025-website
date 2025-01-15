@@ -56,3 +56,13 @@ body {
   display: none; /* Remove the line for the last item */
 }
 
+.roadmap-task-is-completed {
+  position:absolute;
+  background-color:white;
+  font-size:1.2em;
+  top:2px;
+  left:-7px;
+  color:#5D8736;
+  z-index:10;
+  width:19.2px;
+}

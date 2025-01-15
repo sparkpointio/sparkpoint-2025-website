@@ -108,7 +108,7 @@ function Card({
         {goals.map((goal, index) => (
           <li className="text-base relative flex items-start custom-bullet" key={index}>
             {goal.isCompleted && (
-                <FontAwesomeIcon className="absolute bg-white text-[1.2em] top-[2px] left-[-7px] text-[#5D8736] z-[10]" icon={faCheckCircle} color="#FF6F00" />
+                <FontAwesomeIcon className="roadmap-task-is-completed" icon={faCheckCircle}  />
             )}
             <span className="bullet"></span>
             <span className="ml-4">{goal.action}</span>
