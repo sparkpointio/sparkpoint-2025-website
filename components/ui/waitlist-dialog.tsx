@@ -108,7 +108,15 @@ export function Waitlist({ children }: { children: React.ReactNode }) {
               </Form.Submit>
             </Form.Root>
             {statusMessage && (
-                <p className="mt-4 text-green-600">{statusMessage}</p>
+                <p
+                    className={`mt-4 ${
+                        statusMessage.includes("error") || statusMessage.includes("Failed")
+                            ? "text-red-500"
+                            : "text-green-600"
+                    }`}
+                >
+                  {statusMessage}
+                </p>
             )}
           </div>
         </Dialog.Content>
