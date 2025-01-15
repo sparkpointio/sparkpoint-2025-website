@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image'
-import { isma, harvz, aldrek, bern, yurie, karan, jrny, andy, rico } from "@/lib/assets";
+import {isma, harvz, aldrek, bern, yurie, karan, jrny, andy, rico, hero_gradient} from "@/lib/assets";
 import Link from 'next/link'
 
 export function Team() {
@@ -91,7 +91,7 @@ export function Team() {
     }
   ]
   return (
-    <section id="team" className="px-6 py-10 md:px-20 bg-gradient-to-t from-[#F78F36] to-[#F1EAA2]">
+    <section id="team" style={{ backgroundImage: `url(${hero_gradient.src})` }} className="px-6 py-10 md:px-20 bg-gradient-to-t from-[#F78F36] to-[#F1EAA2]">
       <div className="container mx-auto">
         <h1 className="text-4xl text-center mt-4 mb-8 font-[family-name:var(--font-rubik)]">The Brains Behind the Spark</h1>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-[85%] mx-auto">

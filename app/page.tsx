@@ -9,7 +9,7 @@ import CookieBotLoader from '@/components/ui/CookieBotLoader'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-hidden">
       <CookieBotLoader />
       <Hero />
       <SparkAgent />
