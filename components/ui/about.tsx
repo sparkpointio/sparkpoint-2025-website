@@ -1,4 +1,4 @@
-import { new_sparkpoint_logo_w_text } from '@/lib/assets'
+import { sparkpoint_logo_spinning } from '@/lib/assets'
 import Image from 'next/image'
 
 export function About() {
@@ -25,7 +25,7 @@ export function About() {
               innovation and community-driven growth.
             </p>
           </div>
-          <Image src={new_sparkpoint_logo_w_text} alt="SparkPoint Logo" className="w-3/4 h-auto md:w-[25%]" />
+          <Image src={sparkpoint_logo_spinning} alt="SparkPoint Logo" className="w-3/4 h-auto md:w-[25%]" />
         </div>
       </div>
     </section>
