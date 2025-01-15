@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Alegreya, Righteous, Solway, Poppins, Rubik } from "next/font/google";
-import localFont from 'next/font/local';
 import Header from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import Script from "next/script";
