@@ -10,6 +10,14 @@ const neogrotesk_regular = localFont({ src: '../lib/assets/fonts/neogrotesk-regu
 const neogrotesk_bold = localFont({ src: '../lib/assets/fonts/neogrotesk-bold.otf', variable: '--font-neogrotesk-bold' });
 const neogrotesk_light = localFont({ src: '../lib/assets/fonts/neogrotesk-light.otf', variable: '--font-neogrotesk-light' });
 
+const poppins_regular = localFont({ src: '../lib/assets/fonts/poppins-regular.ttf', variable: '--font-poppins-regular' });
+const poppins_bold = localFont({ src: '../lib/assets/fonts/poppins-bold.ttf', variable: '--font-poppins-bold' });
+const poppins_light = localFont({ src: '../lib/assets/fonts/poppins-light.ttf', variable: '--font-poppins-light' });
+
+const rubik_regular = localFont({ src: '../lib/assets/fonts/rubik-regular.ttf', variable: '--font-rubik-regular' });
+const rubik_bold = localFont({ src: '../lib/assets/fonts/rubik-bold.ttf', variable: '--font-rubik-bold' });
+const rubik_light = localFont({ src: '../lib/assets/fonts/rubik-light.ttf', variable: '--font-rubik-light' });
+
 const alegreya_regular = Alegreya({
   variable: '--font-alegreya',
   subsets: ['latin']
@@ -78,7 +86,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${righteous.variable} ${solway.className}  ${alegreya_regular.variable} ${neogrotesk_regular.variable} ${neogrotesk_bold.variable} ${neogrotesk_light.variable} antialiased`}
+        className={`${righteous.variable} ${solway.className}  ${alegreya_regular.variable} ${neogrotesk_regular.variable} ${neogrotesk_bold.variable} ${neogrotesk_light.variable} ${rubik_regular.variable} ${rubik_bold.variable} ${rubik_light.variable} ${poppins_regular.variable} ${poppins_bold.variable} ${poppins_light.variable} antialiased`}
       >
         <Header />
         {children}
