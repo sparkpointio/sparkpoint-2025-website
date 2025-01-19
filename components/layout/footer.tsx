@@ -36,7 +36,7 @@ export function Footer() {
       col: 2
     },
     {
-      label: "Ecosystem",
+      label: "CoinMarketCap",
       url: "https://coinmarketcap.com/currencies/sparkpoint/",
       target: "_blank",
       col: 2
