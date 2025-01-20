@@ -72,7 +72,7 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
   position: absolute;
 }
 #light-dark-toggle-container .checkbox-label {
-  background-color: #111;
+  background-color: #1a1d21;
   width: 52px;
   height: 28px;
   border-radius: 50px;
@@ -82,7 +82,7 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border:1px solid #111111;
+  border:1px solid #1a1d21;
   transition:0.5s;
 }
 .dark-mode #light-dark-toggle-container .checkbox-label {
@@ -106,10 +106,10 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 #navbar {
   background-color:#ffffff;
   transition:0.5s;
-  border-color:#000000;
+  border-color:#1a1d21;
 }
 .dark-mode #navbar {
-  background-color:#000000;
+  background-color:#1a1d21;
   border-color:#ffffff;
 }
 #navbar .nav-item {
@@ -150,25 +150,25 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
   transition:0.5s;
   background-color:#ffffff;
   color:#000000;
-  border-color:#000000;
+  border-color:#1a1d21;
 }
 .button-1:hover {
-  --tw-shadow: .25rem .25rem #000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: .25rem .25rem #1a1d21;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #1a1d21), var(--tw-ring-shadow, 0 0 #1a1d21), var(--tw-shadow);
 }
 .dark-mode .button-1 {
-  background-color:#000000;
+  background-color:#1a1d21;
   color:#ffffff;
   border-color:#ffffff;
 }
 .dark-mode .button-1:hover {
-  border-color:#000000;
+  border-color:#1a1d21;
   --tw-shadow: .25rem .25rem #ffffff;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff), var(--tw-ring-shadow, 0 0 #ffffff), var(--tw-shadow);
 }
 .button-2 {
   transition:0.5s;
-  background-color:#000000;
+  background-color:#1a1d21;
   color:#ffffff;
   border-color:#ffffff;
 }
@@ -178,21 +178,21 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 }
 .dark-mode .button-2 {
   background-color:#ffffff;
-  color:#000000;
-  border-color:#000000;
+  color:#1a1d21;
+  border-color:#1a1d21;
 }
 .dark-mode .button-2:hover {
   color:#ffffff;
   border-color:#ffffff;
-  --tw-shadow: .25rem .25rem #000000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #000000), var(--tw-ring-shadow, 0 0 #000000), var(--tw-shadow);
+  --tw-shadow: .25rem .25rem #1a1d21;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #1a1d21), var(--tw-ring-shadow, 0 0 #1a1d21), var(--tw-shadow);
 }
 .bg-1 {
   transition:0.5s;
   background-color:#ffffff;
 }
 .dark-mode .bg-1 {
-  background-color:#000000;
+  background-color:#1a1d21;
 }
 .bg-mask {
   transition:0.5s;
@@ -219,15 +219,15 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 .spark-agent-card {
   transition:0.2s;
   background-color:#ffffff;
-  border-color:#000000;
+  border-color:#1a1d21;
 }
 .dark-mode .spark-agent-card {
-  background-color:#000000;
+  background-color:#1a1d21;
   border-color:#ffffff;
 }
 .spark-agent-card:hover {
-  --tw-shadow: -.25rem .25rem #000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: -.25rem .25rem #1a1d21;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #1a1d21), var(--tw-ring-shadow, 0 0 #1a1d21), var(--tw-shadow);
 }
 .dark-mode .spark-agent-card:hover {
   --tw-shadow: -.25rem .25rem #ffffff;
@@ -237,7 +237,7 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
   background-color:#ffffff;
 }
 .dark-mode .roadmap-task-is-completed {
-  background-color:#000000;
+  background-color:#1a1d21;
 }
 .bg-img-1 {
   transition:0.5s;
@@ -256,14 +256,14 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 .team-card {
   transition:0.2s;
   background-color:#ffffff;
-  border-color:#000000;
+  border-color:#1a1d21;
 }
 .dark-mode .team-card {
-  background-color:#000000;
+  background-color:#1a1d21;
   border-color:#ffffff;
 }
 .team-card:hover {
-  --tw-shadow: .25rem .25rem #000;
+  --tw-shadow: .25rem .25rem #1a1d21;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .dark-mode .team-card:hover {
@@ -273,15 +273,15 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 .roadmap-card {
   transition:0.2s;
   background-color:#ffffff;
-  border-color:#000000;
+  border-color:#1a1d21;
 }
 .dark-mode .roadmap-card {
-  background-color:#000000;
+  background-color:#1a1d21;
   border-color:#ffffff;
 }
 .roadmap-card:hover {
-  --tw-shadow: -.25rem .25rem #000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: -.25rem .25rem #1a1d21;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #1a1d21), var(--tw-ring-shadow, 0 0 #1a1d21), var(--tw-shadow);
 }
 .dark-mode .roadmap-card:hover {
   --tw-shadow: -.25rem .25rem #ffffff;
