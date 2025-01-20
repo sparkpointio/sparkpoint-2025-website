@@ -83,6 +83,7 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
   justify-content: space-between;
   align-items: center;
   border:1px solid #111111;
+  transition:0.5s;
 }
 .dark-mode #light-dark-toggle-container .checkbox-label {
   border:1px solid #ffffff;
@@ -192,6 +193,14 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 }
 .dark-mode .bg-1 {
   background-color:#000000;
+}
+.bg-mask {
+  transition:0.5s;
+  background-color:rgba(0,0,0,0);
+}
+.dark-mode .bg-mask {
+  transition:0.5s;
+  background-color:rgba(0,0,0,0.1);
 }
 .text-custom-1 {
   transition:0.5s;

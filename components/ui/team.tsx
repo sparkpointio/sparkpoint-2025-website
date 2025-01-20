@@ -3,8 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image'
-import {isma, harvz, aldrek, bern, yurie, karan, jrny, andy, rico, hero_gradient} from "@/lib/assets";
+import {
+  isma,
+  harvz,
+  aldrek,
+  bern,
+  yurie,
+  karan,
+  jrny,
+  andy,
+  rico,
+  hero_gradient,
+  bg_hero_light,
+  bg_hero_dark
+} from "@/lib/assets";
 import Link from 'next/link'
+import React from "react";
 
 export function Team() {
   const team = [
@@ -91,28 +105,34 @@ export function Team() {
     }
   ]
   return (
-    <section id="team" style={{ backgroundImage: `url(${hero_gradient.src})` }} className="px-6 py-10 md:px-20 bg-gradient-to-t from-[#F78F36] to-[#F1EAA2]">
-      <div className="container mx-auto">
-        <h1 className="text-4xl text-center mt-4 mb-8 font-[family-name:var(--font-rubik)]">The Brains Behind the Spark</h1>
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-[85%] mx-auto">
-          {team.map((member, index) => (
-            <Card key={index} {...member} />
-          ))}
-        </div>
-      </div>
+      <section id="team" className="px-6 py-10 md:px-20 relative">
+        <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1" style={{backgroundImage: `url(${bg_hero_light.src})`}}></div>
+        <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2" style={{backgroundImage: `url(${bg_hero_dark.src})`}}></div>
+        <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask"></div>
 
-    </section>
+        <div className="container mx-auto relative z-3">
+          <h1 className="text-4xl text-center mt-4 mb-8 font-[family-name:var(--font-rubik)] text-custom-1">The Brains Behind the
+            Spark</h1>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 md:max-w-[85%] mx-auto">
+            {team.map((member, index) => (
+                <Card key={index} {...member} />
+            ))}
+          </div>
+        </div>
+
+      </section>
   )
 }
 
-function Card({ image, name, role, socials }: {
+function Card({image, name, role, socials}: {
   image: string | StaticImageData, name: string, role: string, socials: {
     icon: IconProp,
     url: string
   }[]
 }) {
   return (
-    <div className="team-card rounded-lg shadow-lg w-full flex flex-col items-center p-4 active:drop-shadow-none transition-all duration-200 hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
+      <div
+          className="team-card rounded-lg shadow-lg w-full flex flex-col items-center p-4 active:drop-shadow-none transition-all duration-200 hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       <Image
         src={image}
         alt={name}

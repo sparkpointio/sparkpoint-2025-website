@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { buttonVariants } from '@/components/variants/button-variants';
-import { alchemy_logo, arbitrum_arb_logo_full, hero_gradient } from '@/lib/assets';
+import { alchemy_logo, arbitrum_arb_logo_full, bg_hero_light, bg_hero_dark } from '@/lib/assets';
 import Image from 'next/image'
 import Link from 'next/link';
 import { Waitlist } from '@/components/ui/waitlist-dialog';
@@ -10,12 +10,16 @@ import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Hero = () => {
   return (
-    <section style={{ backgroundImage: `url(${hero_gradient.src})` }} className="text-center bg-cover bg-center bg-no-repeat relative w-full h-screen">
-      <div className='m-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full'>
-        <h1 className="text-4xl md:text-5xl leading-tight text-center mt-24 font-[family-name:var(--font-rubik)]">
+    <section className="text-center relative w-full h-screen">
+      <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1" style={{ backgroundImage: `url(${bg_hero_light.src})` }}></div>
+      <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2" style={{ backgroundImage: `url(${bg_hero_dark.src})` }}></div>
+      <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask"></div>
+
+      <div className='m-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full relative z-2'>
+        <h1 className="text-4xl md:text-5xl leading-tight text-center mt-24 font-[family-name:var(--font-rubik)] text-custom-1">
           SparkPoint Brings<br className="lg:hidden" /> AI and Blockchain<br/> Together to Spark Growth
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-gray-600 font-[family-name:var(--font-poppins)]">
+        <p className="mx-auto mt-6 max-w-2xl font-[family-name:var(--font-poppins)] text-custom-1">
           We connect blockchain and AI to unlock new possibilities
           and drive exponential growth for businesses and communities
         </p>
@@ -30,7 +34,7 @@ const Hero = () => {
           </Link>
         </div>
         <div className="mt-16 flex items-center justify-center md:gap-8 gap-4 flex-col md:flex-row">
-          <p className="text-sm">Grants from:</p>
+          <p className="text-sm text-custom-1">Grants from:</p>
           <div className='flex items-center justify-center gap-4'>
             <Link href="https://arbitrum.io/" target='_blank' className='hover:cursor-pointer' title="Arbitrum">
               <Image
