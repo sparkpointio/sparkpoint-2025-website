@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import {bg_hero_dark, bg_hero_light, hero_gradient} from "@/lib/assets";
+import {bg_hero_dark, bg_hero_light} from "@/lib/assets";
 
 export function Roadmap() {
   const quarters = [
@@ -100,15 +100,14 @@ export function Roadmap() {
 }
 
 function Card({
-                title,
-                goals
-              }: {
+  title,
+  goals
+}: {
   title: string,
   goals: { action: string, isCompleted: boolean }[]
 }) {
   return (
-      <div
-          className="flex flex-col roadmap-card p-6 gap-4 rounded-3xl hover:cursor-pointer h-full active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
+    <div className="flex flex-col roadmap-card p-6 gap-4 rounded-3xl hover:cursor-pointer h-full active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-[family-name:var(--font-rubik)] text-custom-1">{title}</h1>
       <ul className="list-disc pl-3 space-y-8">
         {goals.map((goal, index) => (

@@ -13,7 +13,6 @@ import {
   jrny,
   andy,
   rico,
-  hero_gradient,
   bg_hero_light,
   bg_hero_dark
 } from "@/lib/assets";
