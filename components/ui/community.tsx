@@ -2,9 +2,7 @@
 import React from 'react';
 import { buttonVariants } from '@/components/variants/button-variants';
 import { bg_community } from '@/lib/assets';
-import Link from 'next/link';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
-import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Community = () => {
