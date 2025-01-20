@@ -4,6 +4,7 @@ import { Alegreya, Righteous, Solway, Poppins, Rubik } from "next/font/google";
 import Header from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import Script from "next/script";
+import LightDarkToggle from "@/components/layout/light-dark-toggle";
 
 const alegreya_regular = Alegreya({
   variable: '--font-alegreya',
@@ -88,6 +89,7 @@ export default function RootLayout({
         className={`${rubik.variable} ${poppins.variable} ${righteous.variable} ${solway.variable} ${alegreya_regular.variable} antialiased`}
       >
         <Header />
+        <LightDarkToggle />
         {children}
         <Footer />
       </body>

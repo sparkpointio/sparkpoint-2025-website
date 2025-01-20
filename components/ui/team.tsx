@@ -112,14 +112,14 @@ function Card({ image, name, role, socials }: {
   }[]
 }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg w-full flex flex-col items-center p-4 active:drop-shadow-none transition-all duration-200 hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
+    <div className="team-card rounded-lg shadow-lg w-full flex flex-col items-center p-4 active:drop-shadow-none transition-all duration-200 hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       <Image
         src={image}
         alt={name}
         className="w-32 h-32 rounded-full mx-auto"
       />
-      <h2 className="text-xl font-semibold text-center mt-4">{name}</h2>
-      <p className="text-center text-gray-600">{role}</p>
+      <h2 className="text-xl font-semibold text-center mt-4 text-custom-1">{name}</h2>
+      <p className="text-center text-gray-600 text-custom-2">{role}</p>
       <div className="flex justify-center mt-4 space-x-4">
         {socials.map((social, index) => (
           <Link key={index} href={social.url} target="_blank" rel="noopener noreferrer" title={`View ${name}`}>

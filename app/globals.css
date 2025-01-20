@@ -58,11 +58,223 @@ body {
 
 .roadmap-task-is-completed {
   position:absolute;
-  background-color:white;
   font-size:1.2em;
   top:2px;
   left:-7px;
   color:#5D8736;
   z-index:10;
   width:19.2px;
+}
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+#light-dark-toggle-container .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+#light-dark-toggle-container .checkbox-label {
+  background-color: #111;
+  width: 52px;
+  height: 28px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid #111111;
+}
+.dark-mode #light-dark-toggle-container .checkbox-label {
+  border:1px solid #ffffff;
+}
+#light-dark-toggle-container .fa-moon {color: #f1c40f;}
+#light-dark-toggle-container .fa-sun {color: #f39c12;}
+#light-dark-toggle-container .checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+#light-dark-toggle-container .checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+#navbar {
+  background-color:#ffffff;
+  transition:0.5s;
+  border-color:#000000;
+}
+.dark-mode #navbar {
+  background-color:#000000;
+  border-color:#ffffff;
+}
+#navbar .nav-item {
+  color:#4b5563;
+  transition:0.5s;
+}
+#navbar .nav-item:hover {
+  color:#000000;
+  transition:0.5s;
+}
+.dark-mode #navbar .nav-item {
+  color:#ffffff;
+}
+.dark-mode #navbar .nav-item:hover {
+  color:#ffffff;
+}
+.sparkpoint-logo-dark {
+  transition:0.5s;
+  opacity:1;
+}
+.dark-mode .sparkpoint-logo-dark {
+  opacity:0;
+}
+.sparkpoint-logo-light {
+  transition:0.5s;
+  opacity:0;
+}
+.dark-mode .sparkpoint-logo-light {
+  opacity:1;
+}
+.nav-toggle {
+  color:#000000;
+}
+.dark-mode .nav-toggle {
+  color:#ffffff;
+}
+.button-1 {
+  transition:0.5s;
+  background-color:#ffffff;
+  color:#000000;
+  border-color:#000000;
+}
+.button-1:hover {
+  --tw-shadow: .25rem .25rem #000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.dark-mode .button-1 {
+  background-color:#000000;
+  color:#ffffff;
+  border-color:#ffffff;
+}
+.dark-mode .button-1:hover {
+  border-color:#000000;
+  --tw-shadow: .25rem .25rem #ffffff;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff), var(--tw-ring-shadow, 0 0 #ffffff), var(--tw-shadow);
+}
+.button-2 {
+  transition:0.5s;
+  background-color:#000000;
+  color:#ffffff;
+  border-color:#ffffff;
+}
+.button-2:hover {
+  --tw-shadow: .25rem .25rem #ffffff;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff), var(--tw-ring-shadow, 0 0 #ffffff), var(--tw-shadow);
+}
+.dark-mode .button-2 {
+  background-color:#ffffff;
+  color:#000000;
+  border-color:#000000;
+}
+.dark-mode .button-2:hover {
+  color:#ffffff;
+  border-color:#ffffff;
+  --tw-shadow: .25rem .25rem #000000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #000000), var(--tw-ring-shadow, 0 0 #000000), var(--tw-shadow);
+}
+.bg-1 {
+  transition:0.5s;
+  background-color:#ffffff;
+}
+.dark-mode .bg-1 {
+  background-color:#000000;
+}
+.text-custom-1 {
+  transition:0.5s;
+  color:#000000;
+}
+.dark-mode .text-custom-1 {
+  color:#ffffff;
+}
+.text-custom-2 {
+  transition:0.5s;
+  color:#4b5563;
+}
+.dark-mode .text-custom-2 {
+  color:#cccccc;
+}
+.spark-agent-card {
+  transition:0.2s;
+  background-color:#ffffff;
+  border-color:#000000;
+}
+.dark-mode .spark-agent-card {
+  background-color:#000000;
+  border-color:#ffffff;
+}
+.spark-agent-card:hover {
+  --tw-shadow: -.25rem .25rem #000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.dark-mode .spark-agent-card:hover {
+  --tw-shadow: -.25rem .25rem #ffffff;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff), var(--tw-ring-shadow, 0 0 #ffffff), var(--tw-shadow);
+}
+.roadmap-task-is-completed {
+  background-color:#ffffff;
+}
+.dark-mode .roadmap-task-is-completed {
+  background-color:#000000;
+}
+.bg-img-1 {
+  transition:0.5s;
+  opacity:1;
+}
+.dark-mode .bg-img-1 {
+  opacity:0;
+}
+.bg-img-2 {
+  transition:0.5s;
+  opacity:0;
+}
+.dark-mode .bg-img-2 {
+  opacity:1;
+}
+.team-card {
+  transition:0.2s;
+  background-color:#ffffff;
+  border-color:#000000;
+}
+.dark-mode .team-card {
+  background-color:#000000;
+  border-color:#ffffff;
+}
+.team-card:hover {
+  --tw-shadow: .25rem .25rem #000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.dark-mode .team-card:hover {
+  --tw-shadow: .25rem .25rem #ffffff;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff), var(--tw-ring-shadow, 0 0 #ffffff), var(--tw-shadow);
+}
+.roadmap-card {
+  transition:0.2s;
+  background-color:#ffffff;
+  border-color:#000000;
+}
+.dark-mode .roadmap-card {
+  background-color:#000000;
+  border-color:#ffffff;
+}
+.roadmap-card:hover {
+  --tw-shadow: -.25rem .25rem #000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.dark-mode .roadmap-card:hover {
+  --tw-shadow: -.25rem .25rem #ffffff;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #ffffff), var(--tw-ring-shadow, 0 0 #ffffff), var(--tw-shadow);
 }

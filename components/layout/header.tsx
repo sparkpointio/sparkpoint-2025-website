@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
-import { new_sparkpoint_logo_full_dark } from '@/lib/assets';
+import { new_sparkpoint_logo_full_dark, new_sparkpoint_logo_full_light } from '@/lib/assets';
 
 const Header = ({ className }: { className?: string }) => {
 
@@ -42,6 +42,7 @@ const Header = ({ className }: { className?: string }) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
+        id="navbar"
         initial={{
           opacity: 1,
           y: -100,
@@ -54,7 +55,7 @@ const Header = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 bg-white border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-24 xl:mx-auto px-4 md:px-12 py-4 max-w-screen-lg",
+          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-24 xl:mx-auto px-4 md:px-12 py-4 max-w-screen-lg",
           className
         )}
       >
@@ -65,10 +66,15 @@ const Header = ({ className }: { className?: string }) => {
             <Image
               src={new_sparkpoint_logo_full_dark}
               alt="SparkPoint Logo"
-              className="md:h-8 h-4 w-fit"
+              className="md:h-8 h-4 w-fit sparkpoint-logo-dark"
+            />
+            <Image
+                src={new_sparkpoint_logo_full_light}
+                alt="SparkPoint Logo"
+                className="md:h-8 h-4 w-fit absolute top-[12px] sparkpoint-logo-light"
             />
           </Link>
-          <button onClick={toggleMenu} className="text-black">
+          <button onClick={toggleMenu} className="nav-toggle">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -80,25 +86,30 @@ const Header = ({ className }: { className?: string }) => {
                 <Image
                   src={new_sparkpoint_logo_full_dark}
                   alt="SparkPoint Logo"
-                  className="h-8 w-fit"
+                  className="md:h-8 h-4 w-fit"
+                />
+                <Image
+                    src={new_sparkpoint_logo_full_light}
+                    alt="SparkPoint Logo"
+                    className="md:h-8 h-4 w-fit absolute top-[20px] sparkpoint-logo-light"
                 />
               </Link>
               <nav className="flex items-center justify-center gap-6">
-                <Link href="#sparkagent" className="text-gray-600 hover:text-gray-900">
+                <Link href="#sparkagent" className="nav-item hover:text-gray-900">
                   SparkAgent
                 </Link>
-                <Link href="#roadmap" className="text-gray-600 hover:text-gray-900">
+                <Link href="#roadmap" className="nav-item hover:text-gray-900">
                   Roadmap
                 </Link>
-                <Link href="#about" className="text-gray-600 hover:text-gray-900">
+                <Link href="#about" className="nav-item hover:text-gray-900">
                   About
                 </Link>
-                <Link href="#team" className="text-gray-600 hover:text-gray-900">
+                <Link href="#team" className="nav-item hover:text-gray-900">
                   Team
                 </Link>
               </nav>
               <Link href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
-                <button className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })}>
+                <button className={buttonVariants({ variant: "outline", size: "md", className: "border active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })}>
                   SRK Token
                 </button>
               </Link>
@@ -115,20 +126,20 @@ const Header = ({ className }: { className?: string }) => {
               className="w-full md:hidden grid items-center gap-4 mt-2 px-4"
             >
               <nav className="flex items-center justify-center gap-6 flex-col mx-auto">
-                <Link href="#sparkagent" className="text-gray-600 hover:text-gray-900">
+                <Link href="#sparkagent" className="nav-item text-gray-600 hover:text-gray-900">
                   SparkAgent
                 </Link>
-                <Link href="#roadmap" className="text-gray-600 hover:text-gray-900">
+                <Link href="#roadmap" className="nav-item text-gray-600 hover:text-gray-900">
                   Roadmap
                 </Link>
-                <Link href="#about" className="text-gray-600 hover:text-gray-900">
+                <Link href="#about" className="nav-item text-gray-600 hover:text-gray-900">
                   About
                 </Link>
-                <Link href="#team" className="text-gray-600 hover:text-gray-900">
+                <Link href="#team" className="nav-item text-gray-600 hover:text-gray-900">
                   Team
                 </Link>
               </nav>
-              <Link className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0" })} href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
+              <Link className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })} href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
                 SRK Token
               </Link>
             </motion.div>

@@ -10,7 +10,7 @@ import Community from "@/components/ui/community";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div className="min-h-screen bg-1 overflow-hidden">
       <CookieBotLoader />
       <Hero />
       <SparkAgent />

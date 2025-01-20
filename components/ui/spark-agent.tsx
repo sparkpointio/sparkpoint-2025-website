@@ -37,12 +37,12 @@ const SparkAgent = () => {
   ];
 
   return (
-    <section id="sparkagent" className="container mx-auto px-4 py-12 max-w-7xl">
+    <section id="sparkagent" className="container mx-auto px-4 py-12 max-w-7xl bg-1">
       <div className="space-y-8">
         {/* Header */}
         <div>
-          <h2 className="text-4xl font-[family-name:var(--font-rubik)]">SparkAgent: AI Agent Launchpad</h2>
-          <p className="text-2xl font-[family-name:var(--font-poppins)] mt-5">
+          <h2 className="text-4xl font-[family-name:var(--font-rubik)] text-custom-1">SparkAgent: AI Agent Launchpad</h2>
+          <p className="text-2xl font-[family-name:var(--font-poppins)] mt-5 text-custom-1">
             SparkAgent empowers users to launch their own AI agents with no-code tools,
             decentralized transparency, and community-driven innovation—creating tailored
             AI solutions for Web3 projects using cutting-edge blockchain technology.
@@ -81,7 +81,7 @@ const SparkAgent = () => {
             className={buttonVariants({
               variant: "ghost",
               size: "2xl",
-              className: 'sm:w-auto mt-8 mx-auto flex justify-center w-64 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none'
+              className: 'sm:w-auto mt-8 mx-auto flex justify-center w-64 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none button-1'
             })}
           >
             Launching Soon!
@@ -102,7 +102,7 @@ function FeatureCard({
   description: string
 }) {
   return (
-    <div className="p-6 bg-white rounded-xl border-2 border-black hover:cursor-pointer w-64 h-56 active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
+    <div className="p-6 rounded-xl border-2 border-black hover:cursor-pointer w-64 h-56 active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none spark-agent-card">
       <div className="flex flex-col items-center text-center space-y-3">
         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
           <Image
@@ -113,8 +113,8 @@ function FeatureCard({
             className="w-6 h-6"
           />
         </div>
-        <h3 className="font-bold text-xl">{title}</h3>
-        <p className="text-gray-600 text-sm">{description}</p>
+        <h3 className="font-bold text-xl text-custom-1">{title}</h3>
+        <p className="text-gray-600 text-sm text-custom-1">{description}</p>
       </div>
     </div>
   );

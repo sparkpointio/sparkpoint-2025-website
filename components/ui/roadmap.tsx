@@ -103,8 +103,8 @@ function Card({
   goals: { action: string, isCompleted: boolean }[]
 }) {
   return (
-    <div className="flex flex-col bg-white p-6 gap-4 rounded-3xl hover:cursor-pointer h-full active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
-      <h1 className="text-4xl md:text-5xl lg:text-7xl font-[family-name:var(--font-rubik)]">{title}</h1>
+    <div className="flex flex-col roadmap-card p-6 gap-4 rounded-3xl hover:cursor-pointer h-full active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
+      <h1 className="text-4xl md:text-5xl lg:text-7xl font-[family-name:var(--font-rubik)] text-custom-1">{title}</h1>
       <ul className="list-disc pl-3 space-y-8">
         {goals.map((goal, index) => (
           <li className="text-base relative flex items-start custom-bullet" key={index}>
@@ -112,7 +112,7 @@ function Card({
                 <FontAwesomeIcon className="roadmap-task-is-completed" icon={faCheckCircle}  />
             )}
             <span className="bullet"></span>
-            <span className="ml-4">{goal.action}</span>
+            <span className="text-custom-1 ml-4">{goal.action}</span>
           </li>
         ))}
       </ul>
