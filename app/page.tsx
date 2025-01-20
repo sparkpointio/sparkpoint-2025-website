@@ -6,6 +6,7 @@ import { Roadmap } from '@/components/ui/roadmap'
 import SparkAgent from '@/components/ui/spark-agent'
 import { Team } from '@/components/ui/team'
 import CookieBotLoader from '@/components/ui/CookieBotLoader'
+import Community from "@/components/ui/community";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Roadmap />
       <About />
       <Team />
+      <Community />
     </div>
   )
 }

@@ -26,3 +26,4 @@ export { default as new_sparkpoint_logo_full_dark } from './new-sparkpoint-logo-
 export { default as hero_gradient } from './bg-hero.jpg'
 export { default as sparkagent_launchpad } from './sparkagent-launchpad.png'
 export { default as sparkpoint_logo_spinning } from './srk-anim-square-1.gif'
+export { default as bg_community } from './bg-community.jpg'
