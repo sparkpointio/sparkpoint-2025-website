@@ -13,7 +13,7 @@ export function Roadmap() {
           isCompleted: true,
         }, {
           action: "Bridge SRK to Arbitrum",
-          isCompleted: false,
+          isCompleted: true,
         }, {
           action: "Announce strategic partnerships",
           isCompleted: false,
