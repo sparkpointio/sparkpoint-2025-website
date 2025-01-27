@@ -62,16 +62,16 @@ const Header = ({ className }: { className?: string }) => {
 
         {/* Mobile Menu Button */}
         <div className="absolute -top-1 md:hidden flex items-center justify-between w-full px-4 py-2">
-          <Link href="#">
+          <Link href="/#">
             <Image
               src={new_sparkpoint_logo_full_dark}
               alt="SparkPoint Logo"
               className="md:h-8 h-4 w-fit sparkpoint-logo-dark"
             />
             <Image
-                src={new_sparkpoint_logo_full_light}
-                alt="SparkPoint Logo"
-                className="md:h-8 h-4 w-fit absolute top-[12px] sparkpoint-logo-light"
+              src={new_sparkpoint_logo_full_light}
+              alt="SparkPoint Logo"
+              className="md:h-8 h-4 w-fit absolute top-[12px] sparkpoint-logo-light"
             />
           </Link>
           <button onClick={toggleMenu} className="nav-toggle">
@@ -82,29 +82,29 @@ const Header = ({ className }: { className?: string }) => {
         {!isOpen &&
           (
             <div className='hidden md:flex items-center justify-between w-full'>
-              <Link href="#">
+              <Link href="/#">
                 <Image
                   src={new_sparkpoint_logo_full_dark}
                   alt="SparkPoint Logo"
                   className="md:h-8 h-4 w-fit"
                 />
                 <Image
-                    src={new_sparkpoint_logo_full_light}
-                    alt="SparkPoint Logo"
-                    className="md:h-8 h-4 w-fit absolute top-[20px] sparkpoint-logo-light"
+                  src={new_sparkpoint_logo_full_light}
+                  alt="SparkPoint Logo"
+                  className="md:h-8 h-4 w-fit absolute top-[20px] sparkpoint-logo-light"
                 />
               </Link>
               <nav className="flex items-center justify-center gap-6">
-                <Link href="#sparkagent" className="nav-item hover:text-gray-900">
+                <Link href="/#sparkagent" className="nav-item hover:text-gray-900">
                   SparkAgent
                 </Link>
-                <Link href="#roadmap" className="nav-item hover:text-gray-900">
+                <Link href="/#roadmap" className="nav-item hover:text-gray-900">
                   Roadmap
                 </Link>
-                <Link href="#about" className="nav-item hover:text-gray-900">
+                <Link href="/#about" className="nav-item hover:text-gray-900">
                   About
                 </Link>
-                <Link href="#team" className="nav-item hover:text-gray-900">
+                <Link href="/#team" className="nav-item hover:text-gray-900">
                   Team
                 </Link>
               </nav>
@@ -126,16 +126,16 @@ const Header = ({ className }: { className?: string }) => {
               className="w-full md:hidden grid items-center gap-4 mt-2 px-4"
             >
               <nav className="flex items-center justify-center gap-6 flex-col mx-auto">
-                <Link href="#sparkagent" className="nav-item text-gray-600 hover:text-gray-900">
+                <Link href="/#sparkagent" className="nav-item text-gray-600 hover:text-gray-900">
                   SparkAgent
                 </Link>
-                <Link href="#roadmap" className="nav-item text-gray-600 hover:text-gray-900">
+                <Link href="/#roadmap" className="nav-item text-gray-600 hover:text-gray-900">
                   Roadmap
                 </Link>
-                <Link href="#about" className="nav-item text-gray-600 hover:text-gray-900">
+                <Link href="/#about" className="nav-item text-gray-600 hover:text-gray-900">
                   About
                 </Link>
-                <Link href="#team" className="nav-item text-gray-600 hover:text-gray-900">
+                <Link href="/#team" className="nav-item text-gray-600 hover:text-gray-900">
                   Team
                 </Link>
               </nav>

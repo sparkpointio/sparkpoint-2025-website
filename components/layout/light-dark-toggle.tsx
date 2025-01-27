@@ -10,26 +10,25 @@ const LightDarkToggle = () => {
 
     // Load the initial state from localStorage when the component mounts
     useEffect(() => {
-        const darkModeFromStorage = localStorage.getItem("dark-mode") === "true";
+        const darkModeFromStorage = localStorage.getItem("dark") === "true";
         setIsDarkMode(darkModeFromStorage);
         if (darkModeFromStorage) {
-            document.body.classList.add("dark-mode");
+            document.documentElement.classList.add("dark");
         } else {
-            document.body.classList.remove("dark-mode");
+            document.documentElement.classList.remove("dark");
         }
     }, []);
 
     const toggleDarkMode = () => {
         const newDarkModeState = !isDarkMode;
         setIsDarkMode(newDarkModeState);
-        localStorage.setItem("dark-mode", newDarkModeState.toString());
+        localStorage.setItem("dark", newDarkModeState.toString());
         if (newDarkModeState) {
-            document.body.classList.add("dark-mode");
+            document.documentElement.classList.add("dark");
         } else {
-            document.body.classList.remove("dark-mode");
+            document.documentElement.classList.remove("dark");
         }
     };
-
     return (
         <div className="fixed bottom-[70px] left-[10px] z-[10]" id="light-dark-toggle-container">
             <input

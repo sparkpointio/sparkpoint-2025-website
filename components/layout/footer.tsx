@@ -7,14 +7,13 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faXTwitter, faFacebook, faInstagram, faYoutube, faMedium, faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-// TODO: Finish footer
 export function Footer() {
 
   const footer_links = [
     {
       label: "Privacy Policy",
-      url: "https://github.com/sparkpointio/sparkpoint.io-privacy-policy/tree/main",
-      target: "_blank",
+      url: "/privacy-policy",
+      target: "_self",
       col: 1
     },
     {
