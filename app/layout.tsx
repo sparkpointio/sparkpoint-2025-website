@@ -68,9 +68,21 @@ export default function RootLayout({
         <meta property="og:image" content="/og-image.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sparkpoint.io" />
+
+        {/* Cookiebot CMP */}
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="879d6476-b92b-4f45-aca8-b3299186cd06"
+          data-blockingmode="auto"
+          strategy="afterInteractive"
+        />
+
+        {/* Google Analytics */}
         <Script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-CN79RFQG3G`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-CN79RFQG3G"
+          data-cookieconsent="ignore"
         />
         <Script
           id="google-analytics"
@@ -80,7 +92,9 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-CN79RFQG3G');
+              gtag('config', 'G-CN79RFQG3G', {
+                'anonymize_ip': true
+              });
             `,
           }}
         />
