@@ -19,7 +19,7 @@ const Community = () => {
           At the heart of everything we do is a deep commitment<br className="hidden sm:block" /> to the people who make our mission possible.
         </p>
 
-        <a href="https://t.me/SparkpointOfficial" target="_blank" rel="noreferrer" className={buttonVariants({
+        <a href="https://t.me/SparkPointOfficial" target="_blank" rel="noreferrer" className={buttonVariants({
           variant: "ghost",
           size: "lg",
           className: 'w-full sm:w-[300px] active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none button-1'

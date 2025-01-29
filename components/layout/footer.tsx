@@ -75,7 +75,7 @@ export function Footer() {
     },
     {
       icon: faTelegram,
-      href: "https://t.me/SparkpointOfficial"
+      href: "https://t.me/SparkPointOfficial"
     },
     {
       icon: faLinkedin,
