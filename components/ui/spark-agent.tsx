@@ -83,6 +83,7 @@ const SparkAgent = () => {
               size: "2xl",
               className: 'sm:w-auto mt-8 mx-auto flex justify-center w-64 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none button-1'
             })}
+            onClick={() => window.open('https://test.sparkpoint.io', '_blank')}
           >
             Launching Soon!
           </button>
