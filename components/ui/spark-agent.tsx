@@ -85,7 +85,7 @@ const SparkAgent = () => {
             })}
             onClick={() => window.open('https://test.sparkpoint.io', '_blank')}
           >
-            Launching Soon!
+            Try our Alpha!
           </button>
         </Waitlist>
       </div>
