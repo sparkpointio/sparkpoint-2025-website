@@ -16,10 +16,10 @@ export function Roadmap() {
           isCompleted: true,
         }, {
           action: "Announce strategic partnerships",
-          isCompleted: false,
+          isCompleted: true,
         }, {
           action: "Launch SparkAgent AI Launchpad",
-          isCompleted: false,
+          isCompleted: true,
         }, {
           action: "Introduce SparkPoint's first SparkAgent",
           isCompleted: false,
