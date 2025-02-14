@@ -9,6 +9,9 @@ import {
   aldrek,
   bern,
   yurie,
+  kevin,
+  nikko,
+  luis,
   karan,
   jrny,
   andy,
@@ -58,12 +61,36 @@ export function Team() {
       ]
     },
     {
+      image: kevin,
+      name: "Kevin Baldo",
+      role: "Full Stack Developer",
+      socials: [
+        { icon: faLinkedin, url: "https://www.linkedin.com/in/kbaldo/" }
+      ]
+    },
+    {
       image: yurie,
       name: "Yurie Takeuchi",
       role: "Community Support",
       socials: [
         { icon: faXTwitter, url: "https://x.com/Sparky_SRK" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/yurie-takeuchi" }
+      ]
+    },
+    {
+      image: nikko,
+      name: "Nikko Masagca",
+      role: "Community and Marketing Specialist",
+      socials: [
+        { icon: faLinkedin, url: "https://www.linkedin.com/in/nikkomasagcaofficial/" }
+      ]
+    },
+    {
+      image: luis,
+      name: "Luis Napone",
+      role: "Marketing Consultant",
+      socials: [
+        { icon: faLinkedin, url: "https://www.linkedin.com/in/luis-leandro/" }
       ]
     },
     {
