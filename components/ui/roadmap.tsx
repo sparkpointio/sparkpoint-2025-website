@@ -18,8 +18,11 @@ export function Roadmap() {
           action: "Announce strategic partnerships",
           isCompleted: true,
         }, {
-          action: "Launch SparkAgent AI Launchpad",
+          action: "Launch SparkAgent AI Launchpad testnet",
           isCompleted: true,
+        }, {
+          action: "Launch SparkAgent AI Launchpad mainnet",
+          isCompleted: false,
         }, {
           action: "Introduce SparkPoint's first SparkAgent",
           isCompleted: false,
