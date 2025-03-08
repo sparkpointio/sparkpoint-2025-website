@@ -1,7 +1,7 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import {bg_hero_dark, bg_hero_light} from "@/lib/assets";
+import { bg_hero_dark, bg_hero_light } from "@/lib/assets";
 
 export function Roadmap() {
   const quarters = [
@@ -22,10 +22,10 @@ export function Roadmap() {
           isCompleted: true,
         }, {
           action: "Launch SparkAgent AI Launchpad mainnet",
-          isCompleted: false,
+          isCompleted: true,
         }, {
           action: "Introduce SparkPoint's first SparkAgent",
-          isCompleted: false,
+          isCompleted: true,
         }
       ]
     },
@@ -85,20 +85,20 @@ export function Roadmap() {
     }
   ]
   return (
-      <section id="roadmap" className="px-6 py-10 md:px-20 relative">
-        <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1" style={{backgroundImage: `url(${bg_hero_light.src})`}}></div>
-        <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2" style={{backgroundImage: `url(${bg_hero_dark.src})`}}></div>
-        <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask"></div>
+    <section id="roadmap" className="px-6 py-10 md:px-20 relative">
+      <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1" style={{ backgroundImage: `url(${bg_hero_light.src})` }}></div>
+      <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2" style={{ backgroundImage: `url(${bg_hero_dark.src})` }}></div>
+      <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask"></div>
 
-        <div className="container mx-auto relative z-3">
-          <h1 className=" text-3xl md:text-4xl lg:text-5xl my-4 mb-8 font-[family-name:var(--font-rubik)] text-custom-1">ROADMAP {new Date().getFullYear()}</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {quarters.map((quarter) => (
-                <Card key={quarter.quarter} title={quarter.quarter} goals={quarter.goals || []}/>
-            ))}
-          </div>
+      <div className="container mx-auto relative z-3">
+        <h1 className=" text-3xl md:text-4xl lg:text-5xl my-4 mb-8 font-[family-name:var(--font-rubik)] text-custom-1">ROADMAP {new Date().getFullYear()}</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {quarters.map((quarter) => (
+            <Card key={quarter.quarter} title={quarter.quarter} goals={quarter.goals || []} />
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
   )
 }
 
@@ -116,7 +116,7 @@ function Card({
         {goals.map((goal, index) => (
           <li className="text-base relative flex items-start custom-bullet" key={index}>
             {goal.isCompleted && (
-                <FontAwesomeIcon className="roadmap-task-is-completed" icon={faCheckCircle}  />
+              <FontAwesomeIcon className="roadmap-task-is-completed" icon={faCheckCircle} />
             )}
             <span className="bullet"></span>
             <span className="text-custom-1 ml-4">{goal.action}</span>
