@@ -25,7 +25,7 @@ export function About() {
               innovation and community-driven growth.
             </p>
           </div>
-          <Image src={sparkpoint_logo_spinning} alt="SparkPoint Logo" className="w-3/4 h-auto md:w-[25%]" />
+          <Image src={sparkpoint_logo_spinning} alt="SparkPoint Logo" unoptimized className="w-3/4 h-auto md:w-[25%]" />
         </div>
       </div>
     </section>

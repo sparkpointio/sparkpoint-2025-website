@@ -13,6 +13,13 @@ import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
 import { new_sparkpoint_logo_full_dark, new_sparkpoint_logo_full_light } from '@/lib/assets';
 
+const nav_links = [
+  { name: "SparkAgent", href: "/#sparkagent" },
+  { name: "Roadmap", href: "/#roadmap" },
+  { name: "About", href: "/#about" },
+  { name: "Team", href: "/#team" },
+  { name: "What's Latest?", href: "/#latest" },
+]
 const Header = ({ className }: { className?: string }) => {
 
   const { scrollYProgress } = useScroll();
@@ -95,18 +102,11 @@ const Header = ({ className }: { className?: string }) => {
                 />
               </Link>
               <nav className="flex items-center justify-center gap-6">
-                <Link href="/#sparkagent" className="nav-item hover:text-gray-900">
-                  SparkAgent
-                </Link>
-                <Link href="/#roadmap" className="nav-item hover:text-gray-900">
-                  Roadmap
-                </Link>
-                <Link href="/#about" className="nav-item hover:text-gray-900">
-                  About
-                </Link>
-                <Link href="/#team" className="nav-item hover:text-gray-900">
-                  Team
-                </Link>
+                {nav_links.map((link, index) => (
+                  <Link key={index} href={link.href} className="nav-item hover:text-gray-900">
+                    {link.name}
+                  </Link>
+                ))}
               </nav>
               <Link href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
                 <button className={buttonVariants({ variant: "outline", size: "md", className: "border active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })}>
@@ -126,18 +126,11 @@ const Header = ({ className }: { className?: string }) => {
               className="w-full md:hidden grid items-center gap-4 mt-2 px-4"
             >
               <nav className="flex items-center justify-center gap-6 flex-col mx-auto">
-                <Link href="/#sparkagent" className="nav-item text-gray-600 hover:text-gray-900">
-                  SparkAgent
-                </Link>
-                <Link href="/#roadmap" className="nav-item text-gray-600 hover:text-gray-900">
-                  Roadmap
-                </Link>
-                <Link href="/#about" className="nav-item text-gray-600 hover:text-gray-900">
-                  About
-                </Link>
-                <Link href="/#team" className="nav-item text-gray-600 hover:text-gray-900">
-                  Team
-                </Link>
+                {nav_links.map((link, index) => (
+                  <Link key={index} href={link.href} className="nav-item text-gray-600 hover:text-gray-900">
+                    {link.name}
+                  </Link>
+                ))}
               </nav>
               <Link className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })} href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
                 SRK Token
