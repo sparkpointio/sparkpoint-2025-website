@@ -7,7 +7,7 @@ import SparkAgent from '@/components/ui/spark-agent'
 import { Team } from '@/components/ui/team'
 import CookieBotLoader from '@/components/ui/CookieBotLoader'
 import Community from "@/components/ui/community";
-import WhatsLatest from '@/components/ui/whats-latest';
+import Blogs from '@/components/ui/blogs';
 
 export default function Home() {
   return (
@@ -16,8 +16,8 @@ export default function Home() {
       <Hero />
       <SparkAgent />
       <Roadmap />
+      <Blogs />
       <About />
-      <WhatsLatest />
       <Team />
       <Community />
     </div>

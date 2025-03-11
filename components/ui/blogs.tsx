@@ -50,7 +50,7 @@ export default function WhatsLatest() {
   }, []);
 
   return (
-    <section id="latest" className="py-10 relative h-full">
+    <section id="blogs" className="py-10 relative h-full">
       <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1" style={{ backgroundImage: `url(${bg_hero_light.src})` }}></div>
       <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2 dark:bg-img-2-dark" style={{ backgroundImage: `url(${bg_hero_dark.src})` }}></div>
       <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask dark:bg-mask-dark"></div>

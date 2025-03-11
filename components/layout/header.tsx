@@ -18,7 +18,7 @@ const nav_links = [
   { name: "Roadmap", href: "/#roadmap" },
   { name: "About", href: "/#about" },
   { name: "Team", href: "/#team" },
-  { name: "What's Latest?", href: "/#latest" },
+  { name: "Blogs", href: "/#blogs" },
 ]
 const Header = ({ className }: { className?: string }) => {
 
@@ -108,9 +108,9 @@ const Header = ({ className }: { className?: string }) => {
                   </Link>
                 ))}
               </nav>
-              <Link href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
+              <Link href="https://app.sparkpoint.io/" target='_blank'>
                 <button className={buttonVariants({ variant: "outline", size: "md", className: "border active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })}>
-                  SRK Token
+                  Launch App
                 </button>
               </Link>
             </div>
@@ -132,8 +132,8 @@ const Header = ({ className }: { className?: string }) => {
                   </Link>
                 ))}
               </nav>
-              <Link className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })} href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
-                SRK Token
+              <Link className={buttonVariants({ variant: "outline", size: "md", className: "bg-white border w-full border-black active:drop-shadow-none px-8 py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:bg-[#D6F2FE] active:translate-x-0 active:translate-y-0 active:shadow-none shrink-0 button-1" })} href="https://app.sparkpoint.io/" target='_blank'>
+                Launch App
               </Link>
             </motion.div>
           )}

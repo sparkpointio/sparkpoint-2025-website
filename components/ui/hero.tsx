@@ -25,9 +25,9 @@ const Hero = () => {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <Waitlist>
-            <button className={buttonVariants({ variant: "ghost", size: "lg", className: 'w-full sm:w-48 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none button-1' })}>
-              Join Waitlist
-            </button>
+            <Link className={buttonVariants({ variant: "ghost", size: "lg", className: 'w-full sm:w-48 active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none button-1' })} href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
+              SRK Token
+            </Link>
           </Waitlist>
           <Link className={buttonVariants({ variant: "outline", size: "lg", className: 'w-full sm:w-48 active:drop-shadow-none py-3 transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] text-white bg-black hover:bg-black hover:shadow-[0.25rem_0.25rem_#E5E7EB] active:translate-x-0 active:translate-y-0 active:shadow-none button-2' })} href="https://x.com/sparkpointio" target='_blank'>
             Follow&nbsp;<FontAwesomeIcon icon={faXTwitter} size='sm' />&nbsp;@sparkpointio

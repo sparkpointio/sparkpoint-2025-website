@@ -25,7 +25,7 @@ export function Roadmap() {
           isCompleted: true,
         }, {
           action: "Introduce SparkPoint's first SparkAgent",
-          isCompleted: true,
+          isCompleted: false,
         }
       ]
     },
