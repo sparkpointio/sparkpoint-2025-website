@@ -54,7 +54,7 @@ export default function XArticles() {
             <div key={index} className="h-64 bg-gray-300 dark:bg-gray-700 rounded-lg animate-pulse"></div>
           ))}
         </div>
-        {error && <div className="text-red-500 text-center mt-4">Error loading articles: {error}</div>}
+        {/*error && <div className="text-red-500 text-center mt-4">Error loading articles: {error}</div>*/}
       </div>
     </section>
   );
