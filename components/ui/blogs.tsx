@@ -55,7 +55,6 @@ export default function WhatsLatest() {
       <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2 dark:bg-img-2-dark" style={{ backgroundImage: `url(${bg_hero_dark.src})` }}></div>
       <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask dark:bg-mask-dark"></div>
       <div className="container h-auto w-full mx-auto relative px-6 md:px-16 ">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl dark:text-white text-custom-1 my-4 mb-8 font-[family-name:var(--font-rubik)] text-center">What&apos;s the Latest?</h1>
         <div className="grid h-auto md:grid-cols-2 lg:grid-cols-3 gap-14 mt-4">
           {loading ? (
             Array.from({ length: 6 }).map((_, index) => (

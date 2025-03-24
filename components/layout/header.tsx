@@ -18,7 +18,8 @@ const nav_links = [
   { name: "Roadmap", href: "/#roadmap" },
   { name: "About", href: "/#about" },
   { name: "Team", href: "/#team" },
-  { name: "Blogs", href: "/#blogs" },
+  { name: "Articles", href: "/#articles" },
+  { name: "Blogs", href: "/#blogs" }
 ]
 const Header = ({ className }: { className?: string }) => {
 
