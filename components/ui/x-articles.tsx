@@ -17,7 +17,7 @@ export default function XArticles() {
   }, []);
 
   useEffect(() => {
-    const fetchArticles = async () => {
+    /*const fetchArticles = async () => {
       try {
         const response = await fetch(`/api/fetch-x-articles`);
         if (!response.ok) throw new Error(`Failed to fetch articles: ${response.statusText}`);
@@ -30,7 +30,7 @@ export default function XArticles() {
       } finally {
         setLoading(false);
       }
-    };
+    };*/
 
     // fetchArticles();
     setTweets([

@@ -6,7 +6,6 @@ import Image from 'next/image'
 import {
   isma,
   harvz,
-  aldrek,
   bern,
   yurie,
   kevin,
