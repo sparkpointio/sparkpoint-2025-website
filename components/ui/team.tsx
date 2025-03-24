@@ -42,18 +42,9 @@ export function Team() {
       ]
     },
     {
-      image: aldrek,
-      name: "Aldrick Bonaobra",
-      role: "Lead Blockchain and AI Developer",
-      socials: [
-        { icon: faXTwitter, url: "https://x.com/AldrickBonaobra" },
-        { icon: faLinkedin, url: "https://www.linkedin.com/in/aldrickb/" }
-      ]
-    },
-    {
       image: bern,
       name: "Bernard Historillo",
-      role: "Blockchain and AI Developer",
+      role: "Lead Blockchain and AI Developer",
       socials: [
         { icon: faXTwitter, url: "https://x.com/bernhistorillo" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/bernhistorillo/" }
