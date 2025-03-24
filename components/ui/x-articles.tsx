@@ -4,12 +4,12 @@ import { Tweet } from 'react-tweet'
 import { components } from './tweet-components'
 import { useState, useEffect } from 'react';
 import { bg_hero_light, bg_hero_dark } from '@/lib/assets';
-import { ArticleResponse } from '@/pages/api/fetch-x-articles';
+//import { ArticleResponse } from '@/pages/api/fetch-x-articles';
 
 export default function XArticles() {
   const [tweets, setTweets] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  //const [error, setError] = useState<string | null>(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
