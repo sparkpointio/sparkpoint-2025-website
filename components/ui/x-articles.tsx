@@ -1,15 +1,10 @@
-'use client';
-
-import { Tweet } from 'react-tweet'
-import { components } from './tweet-components'
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { bg_hero_light, bg_hero_dark } from '@/lib/assets';
-//import { ArticleResponse } from '@/pages/api/fetch-x-articles';
+import { Tweet } from 'react-tweet';
 
 export default function XArticles() {
   const [tweets, setTweets] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
-  //const [error, setError] = useState<string | null>(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -17,26 +12,10 @@ export default function XArticles() {
   }, []);
 
   useEffect(() => {
-    /*const fetchArticles = async () => {
-      try {
-        const response = await fetch(`/api/fetch-x-articles`);
-        if (!response.ok) throw new Error(`Failed to fetch articles: ${response.statusText}`);
-
-        const data = await response.json();
-        setTweets(data.map((tweet: ArticleResponse) => tweet.id));
-      } catch (err) {
-        console.error('Error fetching articles:', err);
-        setError(err instanceof Error ? err.message : 'An unknown error occurred');
-      } finally {
-        setLoading(false);
-      }
-    };*/
-
-    // fetchArticles();
     setTweets([
       '1898677460470018387',
       '1892892729786716370',
-      '1888365814652223765'
+      '1888365814652223765',
     ]);
     setLoading(false);
   }, []);
@@ -54,7 +33,6 @@ export default function XArticles() {
             <div key={index} className="h-64 bg-gray-300 dark:bg-gray-700 rounded-lg animate-pulse"></div>
           ))}
         </div>
-        {/*error && <div className="text-red-500 text-center mt-4">Error loading articles: {error}</div>*/}
       </div>
     </section>
   );
@@ -64,9 +42,9 @@ export default function XArticles() {
       <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1" style={{ backgroundImage: `url(${bg_hero_light.src})` }}></div>
       <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2" style={{ backgroundImage: `url(${bg_hero_dark.src})` }}></div>
       <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask"></div>
-
-      <div data-theme={isDarkMode ? "dark" : "light"} className="container mx-auto relative z-3">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl dark:text-white text-custom-1 my-4 mb-8 font-[family-name:var(--font-rubik)] text-center">What&apos;s the Latest?</h1>
+      
+      <div className="container mx-auto relative z-3">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl dark:text-white text-custom-1 my-4 mb-8 font-[family-name:var(--font-rubik)] text-center">Latest Articles</h1>
         {tweets.length === 0 ? (
           <div className="bg-card border border-border text-black dark:text-white rounded-lg p-8 text-center shadow-sm">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-muted-foreground mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,11 +55,11 @@ export default function XArticles() {
           </div>
         ) : (
           <div data-theme={isDarkMode ? "dark" : "light"} className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {tweets.map((tweetId) => (
-              <div key={tweetId} className="flex justify-center items-center">
-                <Tweet id={tweetId} components={components} />
-              </div>
+            {tweets.map((tweetId, i) => (
+              <Tweet key={i} id={tweetId} />
             ))}
+            {/* Embedding this wont work */}
+            {/* <blockquote className="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/6hX0ThI3kH">https://t.co/6hX0ThI3kH</a></p>&mdash; SparkPoint (@sparkpointio) <a href="https://twitter.com/sparkpointio/status/1898677460470018387?ref_src=twsrc%5Etfw">March 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script> */}
           </div>
         )}
       </div>
