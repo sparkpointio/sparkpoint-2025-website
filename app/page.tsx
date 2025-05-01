@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <SparkAgent />
       <Roadmap />
-      <XArticles />
+      {/*<XArticles />*/}
       <Blogs />
       <About />
       <Team />
