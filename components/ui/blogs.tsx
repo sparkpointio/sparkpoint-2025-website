@@ -1,20 +1,10 @@
 import { bg_hero_light, bg_hero_dark } from '@/lib/assets';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
 import {
   motion
 } from "framer-motion";
-interface FeedItem {
-  title: string;
-  link: string;
-  content: ContentSnippet;
-}
-
-interface ContentSnippet {
-  imageSrc: string;
-}
 
 // function parseContentSnippet(snippet: Element | null): ContentSnippet {
 //   const match = snippet?.innerHTML.match(/<figure><img[^>]+src="([^">]+)"/);
@@ -31,6 +21,14 @@ interface CleanedArticle {
   description: string;
 }
 
+interface MediumRawItem {
+  title: string;
+  author: string;
+  pubDate: string;
+  link: string;
+  description: string;
+}
+
 export default function WhatsLatest() {
   const [items, setItems] = useState<CleanedArticle[]>([]);
   const [loading, setLoading] = useState(true);
@@ -38,7 +36,7 @@ export default function WhatsLatest() {
 
   const RSS_API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Ftheecosystem';
 
-  const xArticles: CleanedArticle[] = [
+  const xArticles = useMemo<CleanedArticle[]>(() => [
     {
       title: "February in Focus: SparkPoint Accelerates Growth with Arbitrum Launch and Strategic Milestones",
       author: "SparkPoint",
@@ -63,7 +61,7 @@ export default function WhatsLatest() {
       thumbnail: "https://pbs.twimg.com/media/GjTOtTCXsAA8rm-?format=jpg&name=900x900",
       description: "Let’s look back at what our team and community have accomplished in January—a month of major milestones, growth, and momentum as we position ourselves as a serious contender in AI Agents and blockchain innovation."
     }
-  ];
+  ], []);
 
   useEffect(() => {
     setLoading(false);
@@ -73,7 +71,7 @@ export default function WhatsLatest() {
         const response = await axios.get(RSS_API_URL);
         const rawItems = response.data.items;
 
-        const cleaned = rawItems.map((item: any): CleanedArticle => {
+        const cleaned = rawItems.map((item: MediumRawItem): CleanedArticle => {
           const thumbMatch = item.description.match(/<img[^>]+src="([^">]+)"/);
 
           // Strip all HTML tags from the description
@@ -100,7 +98,7 @@ export default function WhatsLatest() {
     };
 
     fetchMediumArticles();
-  }, []);
+  }, [xArticles]);
 
   return (
       <section id="blogs" className="py-10 relative h-full">
