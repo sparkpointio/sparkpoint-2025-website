@@ -8,7 +8,7 @@ import { Team } from '@/components/ui/team'
 import CookieBotLoader from '@/components/ui/CookieBotLoader'
 import Community from "@/components/ui/community";
 import Blogs from '@/components/ui/blogs';
-// import XArticles from '@/components/ui/x-articles';
+import XArticles from '@/components/ui/x-articles';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <SparkAgent />
       <Roadmap />
-      {/*<XArticles />*/}
+      <XArticles />
       <Blogs />
       <About />
       <Team />
