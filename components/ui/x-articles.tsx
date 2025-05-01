@@ -3,7 +3,7 @@ import { bg_hero_light, bg_hero_dark } from '@/lib/assets';
 import { Tweet } from 'react-tweet';
 
 export default function XArticles() {
-  const [tweets, setTweets] = useState<string[]>([]);
+  const [tweets, setTweets] = useState<{ id: string; image: string }[]>([]);
   const [loading, setLoading] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -11,14 +11,49 @@ export default function XArticles() {
     setIsDarkMode(localStorage.getItem("dark") === "true");
   }, []);
 
+    useEffect(() => {
+        setTweets([
+            {
+                id: '1898677460470018387',
+                image: 'https://pbs.twimg.com/media/GllysdmasAEwddE?format=jpg&name=900x900',
+            },
+            {
+                id: '1892892729786716370',
+                image: 'https://pbs.twimg.com/media/GkTlzhXWoAAymfU?format=jpg&name=900x900',
+            },
+            {
+                id: '1888365814652223765',
+                image: 'https://pbs.twimg.com/media/GjTOtTCXsAA8rm-?format=jpg&name=900x900',
+            },
+        ]);
+        setLoading(false);
+    }, []);
+
   useEffect(() => {
-    setTweets([
-      '1898677460470018387',
-      '1892892729786716370',
-      '1888365814652223765',
-    ]);
-    setLoading(false);
-  }, []);
+    const replaceLinks = () => {
+      const tweetLinks = document.querySelectorAll('a[href^="http://x.com/i/article/"]');
+
+      tweetLinks.forEach((link, index) => {
+        const img = document.createElement('img');
+        img.src = tweets[index].image;
+        img.alt = "Article preview";
+        img.className = "rounded-lg mt-2";
+
+        const anchor = document.createElement('a');
+        anchor.href = `https://x.com/sparkpointio/status/${tweets[index].id}`;
+        anchor.target = "_blank";
+        anchor.rel = "noopener noreferrer";
+        anchor.appendChild(img);
+
+        link.replaceWith(anchor);
+      });
+    };
+
+    // Give it a moment for the tweet to fully render
+    const timeout = setTimeout(replaceLinks, 1000);
+
+    return () => clearTimeout(timeout);
+  }, [tweets]);
 
   if (loading) return (
     <section id="articles" className="px-6 py-10 md:px-20 relative">
@@ -55,8 +90,8 @@ export default function XArticles() {
           </div>
         ) : (
           <div data-theme={isDarkMode ? "dark" : "light"} className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {tweets.map((tweetId, i) => (
-              <Tweet key={i} id={tweetId} />
+            {tweets.map((tweet, i) => (
+              <Tweet key={i} id={tweet.id} />
             ))}
             {/* Embedding this wont work */}
             {/* <blockquote className="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/6hX0ThI3kH">https://t.co/6hX0ThI3kH</a></p>&mdash; SparkPoint (@sparkpointio) <a href="https://twitter.com/sparkpointio/status/1898677460470018387?ref_src=twsrc%5Etfw">March 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script> */}
