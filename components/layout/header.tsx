@@ -15,6 +15,7 @@ import { new_sparkpoint_logo_full_dark, new_sparkpoint_logo_full_light } from '@
 
 const nav_links = [
   { name: "SparkAgent", href: "/#sparkagent" },
+  { name: "AI Services", href: "/#ai-services" },
   { name: "Roadmap", href: "/#roadmap" },
   { name: "About", href: "/#about" },
   { name: "Team", href: "/#team" },
@@ -63,7 +64,7 @@ const Header = ({ className }: { className?: string }) => {
           duration: 0.2,
         }}
         className={cn(
-          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-24 xl:mx-auto px-4 md:px-12 py-4 max-w-screen-lg",
+          "fixed top-4 left-0 right-0 z-50 flex mx-4 items-center justify-between p-4 border border-black rounded-[1.7rem] gap-1 flex-col md:flex-row md:mx-12 lg:mx-22 xl:mx-auto px-4 md:px-12 py-4 max-w-[1100px]",
           className
         )}
       >

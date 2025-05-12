@@ -1,0 +1,1 @@
+export { default as bird_1 } from './bird-1.png'

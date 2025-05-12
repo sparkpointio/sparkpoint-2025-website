@@ -8,6 +8,7 @@ import { Team } from '@/components/ui/team'
 import CookieBotLoader from '@/components/ui/CookieBotLoader'
 import Community from "@/components/ui/community";
 import Blogs from '@/components/ui/blogs';
+import AIServices from '@/components/ui/ai-services';
 // import XArticles from '@/components/ui/x-articles';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <CookieBotLoader />
       <Hero />
       <SparkAgent />
+      <AIServices />
       <Roadmap />
       {/*<XArticles />*/}
       <Blogs />
