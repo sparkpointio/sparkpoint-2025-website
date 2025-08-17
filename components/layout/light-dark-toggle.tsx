@@ -1,34 +1,13 @@
 'use client';
 
-import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { useDarkMode } from "@/lib/utils/hooks/useDarkMode";
 
 const LightDarkToggle = () => {
-    // State to track dark mode
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    // Use our custom hook to manage dark mode
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
 
-    // Load the initial state from localStorage when the component mounts
-    useEffect(() => {
-        const darkModeFromStorage = localStorage.getItem("dark") === "true";
-        setIsDarkMode(darkModeFromStorage);
-        if (darkModeFromStorage) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    }, []);
-
-    const toggleDarkMode = () => {
-        const newDarkModeState = !isDarkMode;
-        setIsDarkMode(newDarkModeState);
-        localStorage.setItem("dark", newDarkModeState.toString());
-        if (newDarkModeState) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    };
     return (
         <div className="fixed bottom-[70px] left-[10px] z-[10]" id="light-dark-toggle-container">
             <input

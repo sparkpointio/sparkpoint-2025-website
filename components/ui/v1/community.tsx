@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { buttonVariants } from '@/components/variants/button-variants';
-import { bg_community_light, bg_community_dark } from '@/lib/assets';
+import { bg_community_light, bg_community_dark } from '@/lib/assets/index';
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Community = () => {
   return (
@@ -24,7 +24,7 @@ const Community = () => {
           size: "lg",
           className: 'w-full sm:w-[300px] active:drop-shadow-none py-3 border border-black transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none button-1'
         })}>
-          Join Our Community <FontAwesomeIcon className="ms-2" icon={faTelegram}  />
+          Join Our Community <FontAwesomeIcon className="ms-2" icon={faTelegram} />
         </a>
       </div>
     </section>

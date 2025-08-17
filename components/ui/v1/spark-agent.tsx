@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { buttonVariants } from '../variants/button-variants';
+import { buttonVariants } from '../../variants/button-variants';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import {
   community_driven_logo,

@@ -1,30 +1,20 @@
-"use client";
-
-import { About } from '@/components/ui/about'
-import Hero from '@/components/ui/hero'
-import { Roadmap } from '@/components/ui/roadmap'
-import SparkAgent from '@/components/ui/spark-agent'
-import { Team } from '@/components/ui/team'
-import CookieBotLoader from '@/components/ui/CookieBotLoader'
-import Community from "@/components/ui/community";
-import Blogs from '@/components/ui/blogs';
-import AIServices from '@/components/ui/ai-services';
-// import XArticles from '@/components/ui/x-articles';
-
-export default function Home() {
+import Hero from "@/components/ui/v2/hero";
+import About from "@/components/ui/v2/about";
+import CookieBotLoader from "@/components/ui/CookieBotLoader";
+import Events from "@/components/ui/v2/events";
+import SparkAgentAIServices from "@/components/ui/v2/spark-agent-ai-services";
+import Blogs from '@/components/ui/v1/blogs';
+import { Team } from "@/components/ui/v1/team";
+export default function Page() {
   return (
-    <div className="min-h-screen bg-1 overflow-hidden">
+    <main className="w-full min-h-screen flex flex-col items-center justify-start">
       <CookieBotLoader />
       <Hero />
-      <SparkAgent />
-      <AIServices />
-      <Roadmap />
-      {/*<XArticles />*/}
-      <Blogs />
       <About />
+      <SparkAgentAIServices />
+      <Events />
+      <Blogs />
       <Team />
-      <Community />
-    </div>
-  )
+    </main>
+  );
 }
-
