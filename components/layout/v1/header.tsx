@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { buttonVariants } from '@/components/variants/button-variants';
 import { cn } from '@/lib/utils/style';
-import { new_sparkpoint_logo_full_dark, new_sparkpoint_logo_full_light } from '@/lib/assets';
+import { new_sparkpoint_logo_full_dark, new_sparkpoint_logo_full_light } from '@/lib/assets/index';
 
 const nav_links = [
   { name: "SparkAgent", href: "/#sparkagent" },

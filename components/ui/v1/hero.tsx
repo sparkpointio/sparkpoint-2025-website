@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { buttonVariants } from '@/components/variants/button-variants';
-import { alchemy_logo, arbitrum_arb_logo_full, bg_hero_light, bg_hero_dark } from '@/lib/assets';
+import { alchemy_logo, arbitrum_arb_logo_full, bg_hero_light, bg_hero_dark } from '@/lib/assets/index';
 import Image from 'next/image'
 import Link from 'next/link';
 import { Waitlist } from '@/components/ui/waitlist-dialog';
@@ -17,7 +17,7 @@ const Hero = () => {
 
       <div className='m-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full relative z-2'>
         <h1 className="text-4xl md:text-5xl leading-tight text-center mt-24 font-[family-name:var(--font-rubik)] text-custom-1">
-          SparkPoint Brings<br className="lg:hidden" /> AI and Blockchain<br/> Together to Spark Growth
+          SparkPoint Brings<br className="lg:hidden" /> AI and Blockchain<br /> Together to Spark Growth
         </h1>
         <p className="mx-auto mt-6 max-w-2xl font-[family-name:var(--font-poppins)] text-custom-1">
           We connect blockchain and AI to unlock new possibilities

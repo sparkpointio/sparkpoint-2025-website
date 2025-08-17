@@ -1,6 +1,6 @@
 "use client"
 
-import { new_sparkpoint_logo_full_light } from '@/lib/assets'
+import { new_sparkpoint_logo_full_light } from '@/lib/assets/index'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

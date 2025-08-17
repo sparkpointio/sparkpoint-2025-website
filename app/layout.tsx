@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Alegreya, Righteous, Solway, Poppins, Rubik } from "next/font/google";
-import Header from '@/components/layout/header'
-import { Footer } from '@/components/layout/footer'
+import Header from '@/components/layout/v2/header'
+import { Footer } from '@/components/layout/v1/footer'
 import Script from "next/script";
 import LightDarkToggle from "@/components/layout/light-dark-toggle";
 

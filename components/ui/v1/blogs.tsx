@@ -1,7 +1,11 @@
+"use client";
+
 import { bg_hero_light, bg_hero_dark } from '@/lib/assets';
 import Link from 'next/link';
 import { useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
+import Image from "next/image";
+import { useDarkMode } from "@/lib/utils/hooks/useDarkMode";
 import {
   motion
 } from "framer-motion";
@@ -33,6 +37,9 @@ export default function WhatsLatest() {
   const [items, setItems] = useState<CleanedArticle[]>([]);
   const [loading, setLoading] = useState(true);
   const [visibleItems, setVisibleItems] = useState(6);
+
+  // Use our custom hook to manage dark mode
+  const { isDarkMode } = useDarkMode();
 
   const RSS_API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Ftheecosystem';
 
@@ -101,17 +108,21 @@ export default function WhatsLatest() {
   }, [xArticles]);
 
   return (
-    <section id="blogs" className="py-10 relative h-full">
-      <div className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-1"
-        style={{ backgroundImage: `url(${bg_hero_light.src})` }}></div>
-      <div
-        className="bg-cover bg-center bg-no-repeat absolute top-0 left-0 w-full h-full z-0 bg-img-2 dark:bg-img-2-dark"
-        style={{ backgroundImage: `url(${bg_hero_dark.src})` }}></div>
-      <div className="absolute top-0 left-0 w-full h-full z-1 bg-mask dark:bg-mask-dark"></div>
+    <section id="blogs" className="py-10 relative h-full w-full">
+      {/* Background image with light/dark theme support */}
+      <div className="absolute inset-0 -z-20">
+        <Image
+          src={isDarkMode ? bg_hero_dark : bg_hero_light}
+          alt="Blogs Background"
+          fill
+          style={{ objectFit: "cover" }}
+          quality={90}
+        />
+      </div>
 
-      <p className="text-2xl md:text-3xl lg:text-4xl dark:text-white text-custom-1 my-4 mb-12 font-[family-name:var(--font-rubik)] text-center relative z-[999]">Latest Articles</p>
+      <p className="text-2xl md:text-3xl lg:text-4xl dark:text-white text-custom-1 my-4 mb-12 font-[family-name:var(--font-rubik)] text-center relative z-10 px-6 md:px-16">Latest Articles</p>
 
-      <div className="container h-auto w-full mx-auto relative px-6 md:px-16 ">
+      <div className="container h-auto w-full mx-auto relative px-6 md:px-16 z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 mt-4">
           {loading ? (
             Array.from({ length: 6 }).map((_, index) => (
