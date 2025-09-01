@@ -10,9 +10,6 @@ import {
   isma,
   harvz,
   bern,
-  yurie,
-  kevin,
-  luis,
   karan,
   jrny,
   andy,
@@ -53,31 +50,6 @@ export function Team() {
       socials: [
         { icon: faXTwitter, url: "https://x.com/bernhistorillo" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/bernhistorillo/" }
-      ]
-    },
-    {
-      image: kevin,
-      name: "Kevin Baldo",
-      role: "Full Stack Developer",
-      socials: [
-        { icon: faLinkedin, url: "https://www.linkedin.com/in/kbaldo/" }
-      ]
-    },
-    {
-      image: yurie,
-      name: "Yurie Takeuchi",
-      role: "Community Support",
-      socials: [
-        { icon: faXTwitter, url: "https://x.com/Sparky_SRK" },
-        { icon: faLinkedin, url: "https://www.linkedin.com/in/yurie-takeuchi" }
-      ]
-    },
-    {
-      image: luis,
-      name: "Luis Napone",
-      role: "Marketing Consultant",
-      socials: [
-        { icon: faLinkedin, url: "https://www.linkedin.com/in/luis-leandro/" }
       ]
     },
     {
