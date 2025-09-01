@@ -47,8 +47,8 @@ export default function SparkAgent() {
 
         <div className="flex flex-col">
           {feature_1.map((feature, index) => (
-            <div key={index} className="flex items-center mb-4">
-              <span className="text-2xl">{feature.emoji}</span>
+            <div key={index} className="flex items-center cursor-default mb-4 group">
+              <span className="text-2xl group-hover:scale-110 delay-100 transition-transform">{feature.emoji}</span>
               <span className="ml-2 text-lg text-[#343060] dark:text-[#e8eaff] transition-colors duration-300">{feature.label}</span>
             </div>
           ))}
@@ -63,7 +63,7 @@ export default function SparkAgent() {
       </div>
       <div className="grid md:grid-cols-2 gap-4">
         {feature_2.map((feature, index) => (
-          <div key={index} className="md:h-56 w-full md:w-[90%] bg-white dark:bg-gray-800 rounded-2xl border-[1.5px] border-black dark:border-gray-700 shadow-sm flex flex-col justify-start p-6 sm:pt-8 md:pt-12">
+          <div key={index} className="md:h-56 w-full md:w-[90%] bg-white dark:bg-gray-800 rounded-2xl border-[1.5px] border-black dark:border-gray-700 shadow-sm flex flex-col justify-start p-6 sm:pt-8 md:pt-12 active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
             <h3 className="text-lg font-semibold text-[#343060] dark:text-[#e8eaff] mb-2 text-left">{feature.title}</h3>
             <p className="text-sm text-[#343060]/80 dark:text-[#e8eaff]/80 text-left">{feature.description}</p>
           </div>

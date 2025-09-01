@@ -27,7 +27,7 @@ export default function AIServices() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:mb-8 mb-4">
         {AI_SERVICES.map((feature, index) => (
-          <div key={index} className="min-h-[200px] bg-white dark:bg-gray-800 rounded-2xl border-[1.5px] border-black dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between p-6 group hover:-translate-y-1">
+          <div key={index} className="min-h-[200px] bg-white dark:bg-gray-800 rounded-2xl border-[1.5px] border-black dark:border-gray-700 shadow-lg flex flex-col justify-between p-6 group active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
             <div>
               <h3 className="text-lg font-bold text-[#343060] dark:text-[#e8eaff] mb-4 leading-tight">{feature.title}</h3>
               <p className="text-base text-[#343060]/70 dark:text-[#e8eaff]/70 leading-relaxed">{feature.sub}</p>

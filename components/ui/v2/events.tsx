@@ -88,7 +88,7 @@ function getRoleColor(event_role: EventRole) {
 function EventCard({ event }: { event: Event }) {
   const isEventEnded = event.end_date < new Date();
   return (
-    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl px-4 py-4 sm:px-6 shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="bg-white dark:bg-gray-800 border border-black rounded-2xl px-4 py-4 sm:px-6 shadow-sm active:drop-shadow-none transition-all duration-200 hover:translate-y-[-0.25rem] hover:translate-x-[0.25rem] hover:shadow-[-0.25rem_0.25rem_#000] active:translate-x-0 active:translate-y-0 active:shadow-none">
       {/* Event Logo and Status */}
       <div className={cn("flex items-start sm:items-center justify-between mb-3 sm:mb-4 gap-2", {
         "mb-2": event.title === 'Malaysia Blockchain Week 2025' || event.title === 'Coinfest Asia 2025' || event.title === 'Super AI 2025' || event.title === 'ETH Vietnam 2025' || event.title === 'Taipei Blockchain Week 2025' || event.title,
