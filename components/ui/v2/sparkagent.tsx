@@ -55,7 +55,7 @@ export default function SparkAgent() {
         </div>
 
         <Link
-          href="https://app.sparkpoint.io"
+          href="https://sparkpoint.io"
           target="_blank"
           className={buttonVariants({ variant: "ghost", size: "lg", className: 'w-full gap-2 sm:w-64 md:w-48 active:drop-shadow-none py-3 border border-black dark:border-white transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] dark:hover:shadow-[0.25rem_0.25rem_#fff] active:translate-x-0 active:translate-y-0 active:shadow-none button-1' })}>
           <span className="shrink-0">Launch App</span> <span className="inline-block">→</span>

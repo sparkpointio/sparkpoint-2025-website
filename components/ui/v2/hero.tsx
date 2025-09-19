@@ -47,11 +47,11 @@ export default function Hero() {
 
       <div className="flex flex-col lg:flex-row w-full items-center justify-between">
         <div className="max-w-2xl flex-1">
-          <h1 className="text-[3.5rem] md:text-[4rem] font-bold text-[#343060] dark:text-[#e8eaff] mb-6 leading-[1.1]">
-            DeFi,<br />Simplified by AI.
+          <h1 className="text-[3.5rem] md:text-[5rem] font-bold text-[#343060] dark:text-[#e8eaff] mb-6 leading-[1.1]">
+            Prompt.<br />Build. Own.
           </h1>
           <p className="text-lg md:text-xl text-[#404662] dark:text-[#f0f2ff]  mb-10">
-            Harness the power of AI in DeFi with Sparky, your bluebird co-pilot. <br />Simplify yield strategies, grow your assets, and earn smarter all with safety, clarity, and ease.
+            Your next big move starts here. SparkPoint AI is almost ready. We&apos;re preparing a leap forward for builders and businesses with ownable, on-chain AI experiences.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Link className={buttonVariants({ variant: "ghost", size: "lg", className: 'w-full gap-2 sm:w-48 active:drop-shadow-none py-3 border border-black dark:border-white transition-all duration-200 cursor-pointer hover:-translate-y-[0.25rem] hover:translate-x-[-0.25rem] hover:text-[#000] hover:shadow-[0.25rem_0.25rem_#000] dark:hover:shadow-[0.25rem_0.25rem_#fff] active:translate-x-0 active:translate-y-0 active:shadow-none button-1' })} href="https://app.uniswap.org/explore/tokens/ethereum/0x0488401c3f535193fa8df029d9ffe615a06e74e6" target='_blank'>
